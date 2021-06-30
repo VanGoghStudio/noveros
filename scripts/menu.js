@@ -128,6 +128,7 @@ document.addEventListener('DOMContentLoaded', function () {
             e.preventDefault();
             searchWrap.classList.remove('hide');
             searchWrap.classList.add('showFlex');
+            document.body.style.overflow = 'none';
             let idClose = closeSearchBtn.addEventListener('click', (e) => {
                 e.preventDefault();
                 searchWrap.classList.add('hide');
