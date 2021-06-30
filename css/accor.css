@@ -1,0 +1,189 @@
+.acor-container {
+    margin: 20px 0;
+}
+.acor-container .acor-body {
+    margin: 0 auto;
+    height: 0;
+    color: rgba(0, 0, 0, 0);
+    background-color: #F3F3F2;
+    line-height: 18px;
+    padding: 0 30px;
+    box-sizing: border-box;
+    transition: color 0.5s, padding 0.5s;
+    overflow: hidden;
+    font-size: 16px;
+}
+.acor-body .section-list{
+    margin-bottom: 40px;
+}
+.acor-body .section-list > ul > li{
+    width: 80%;
+}
+.acor-body .check-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.acor-body .submit-form__button{
+    margin-right: 80px;
+}
+.acor-body .check-list__item{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+}
+.acor-body__title{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    margin-bottom: 30px;
+    color: #464646;
+}
+.check-list__item > span {
+    position: relative;
+}
+.check-list__item > span::before{
+    position: absolute;
+    top: 50%;
+    left: -40px;
+}
+.acor-container > label {
+    position: relative;
+    cursor: pointer;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 20px;
+    width: 100%;
+    color: #464646;
+    box-sizing: border-box;
+    z-index: 100;
+    font-size: 18px;
+    margin: 0 0 5px;
+    border-top: 2px solid #EDECE8;
+    transition: color .35s;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 18px;
+    text-transform: uppercase;
+    transition: .35s;
+
+}
+
+.submit-form__input_name, .submit-form__input_name>input{
+    max-width: 480px !important;
+}
+
+.acor-container > input{
+    display: none;
+}
+.acor-container > label:before {
+    content: url('../image/plus-big.svg');
+    display: flex;
+    justify-content: center;
+    line-height: 52px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #F3F2ED;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateX(calc(-100% + -21px)) translateY(-50%);
+}
+.acor-container input:checked + label {
+    background-color: #464646;
+    color: #FFF;
+}
+.acor-container input:checked + label:before {
+    transition: .35s;
+    transform: translateX(calc(-100% + -21px)) translateY(-50%) rotateZ(45deg);
+}
+
+.acor-container input:checked + label + .acor-body {
+    height: auto;
+    margin-top: -5px;
+    padding: 35px 20px 10px;
+}
+.acor-title{
+    margin-right: 25%;
+}
+.acor-title_uper{
+    font-size: 16px;
+}
+.acor-container input:checked + label > .acor-title {
+    color: #ffffff !important;
+}
+
+/* MOBILE CONTAINER */
+
+.acor-container-mobile {
+    margin: 20px 0 50px;
+}
+.acor-container-mobile .acor-body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    height: 0;
+    background-color: #202020;
+    line-height: 10px;
+    padding: 0 30px;
+    box-sizing: border-box;
+    transition: color 0.5s, padding 0.5s;
+    overflow: hidden;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.acor-container-mobile .acor-body .acor-link{
+    margin-bottom: 30px;
+}
+.acor-container-mobile .acor-body .acor-link:last-child{
+    margin-bottom: 0px;
+}
+.acor-container-mobile .acor-body p {
+    font-size: 10px;
+    font-weight: 700;
+    margin: 0 0 10px;
+}
+.acor-container-mobile .acor-body a{
+    color: #FFF !important;
+}
+.acor-container-mobile label{
+    cursor: pointer;
+    background-color: #303030;
+    display: block;
+    padding: 15px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 100;
+    font-size: 12px;
+    margin: 0 0 5px;
+    transition: color .35s;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.acor-container-mobile label:hover {
+    color: #FFF;
+}
+.acor-container-mobile input{
+    display: none;
+}
+.acor-container-mobile label:before {
+    content: '\276F';
+    float: right;
+}
+.acor-container-mobile input:checked + label {
+    background-color: #202020;
+    color: #FFF;
+}
+.acor-container-mobile input:checked + label:before {
+    transition: transform .35s;
+    transform: rotate(90deg);
+}
+.acor-container-mobile input:checked + label + .acor-body {
+    height: auto;
+    margin-top: -5px;
+    padding: 10px 20px 35px 20px;
+}
