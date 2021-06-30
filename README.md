@@ -1,2 +1,2 @@
-# noveros
+# novoros
 Project Novoros
