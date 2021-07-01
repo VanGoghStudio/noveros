@@ -30,36 +30,40 @@
 
     <!-- HEADER -->
 
+    <!-- HEADER -->
+
     <header id="header">
         <section class="header header_dark">
             <button class="text-map open-map-btn">
                 Карта сайта
             </button>
             <nav class="company-links">
-                <a href="#" class="company-links__item">
+                <a href="#" class="company-links__item company-links__item_company">
                     О компании
                 </a>
                 <a href="#" class="company-links__item">
                     Контакты
                 </a>
-                <a href="#" class="company-links__item">
-                    8(8617) 79-52-92
+                <a href="tel:8(617)795292" class="company-links__item company-links__item_bold">
+                    8(617) 79-52-92
                 </a>
                 <a href="#" class="company-links__item">
-                    <img class='people' src="./image/header/user.png" alt="Личный кабинет">
-                    Личный кабинет
+                    <img class='people' src="./image/header/user.svg" alt="Личный кабинет">
+                    <span class="company-links__text">
+                        Личный кабинет
+                    </span>
                 </a>
-                <a href="#" class="company-links__item">
+                <a href="#" class="company-links__item open-search-btn">
                     <img class="loupe" src="./image/header/loupe.png" alt="Поиск">
                 </a>
             </nav>
         </section>
         <section class="header header_white">
             <nav class="catalog-links">
-                <div class="logo-company">
+                <a href="index.html" class="logo-company">
                     <img src="./image/logo.png" alt="Логотип" class="catalog-links__item">
-                </div>
-                <a href="#" class="catalog-links__item">
+                </a>
+                <a href="catalog.html" class="catalog-links__item catalog-header-btn">
                     Каталог
                     <div class="line-open"></div>
                 </a>
@@ -73,17 +77,17 @@
             <nav class="basket-links">
                 <div class="basket-links__item">Корзина</div>
                 <div class="basket-links__item">
-                    <img class="logo-basket" src="./image/header/cart.png" alt="basket">
+                    <img class="logo-basket" src="./image/header/cart.svg" alt="basket">
                 </div>
                 <div class="basket-links__item open-hamb-btn">
-                    <img src="image/menu.svg" alt="basket">
+                    <img src="image/menu.svg" alt="basket" class="open-hamb-img">
                 </div>
                 <!-- <span class="line-open line-open_bold open-hamb-btn"></span> -->
             </nav>
         </section>
         <!-- MENU -->
         <!-- MAP SITE -->
-        <section class="dark-wrap footer-wrap map-wrap">
+        <section class="dark-wrap footer-wrap map-wrap hide">
             <div class="content">
                 <div class="map">
                     <h2 class="map__title">Карта сайта</h2>
@@ -165,6 +169,11 @@
                                 Новости
                             </a>
                         </li>
+                        <li class="column-footer__item column-footer__item_link red-box">
+                            <a href="">
+                                ПРЕДЛОЖИТЬ ИДЕЮ <br> ПО УЛУЧШЕНИЮ <br> КОМПАНИИ
+                            </a>
+                        </li>
                     </ul>
                     <ul class="footer-link__item column-footer">
                         <li class="column-footer__item column-footer__item_heading">
@@ -210,12 +219,12 @@
                             </a>
                         </li>
                         <li class="column-footer__item column-footer__item_link">
-                            <a class="title_red medium-text" href="#">
+                            <a class="title_red medium-text" href="tel:8(617)795292">
                                 8 (8617) 79 52 92
                             </a>
                         </li>
                         <li class="column-footer__item column-footer__item_link">
-                            <a href="">
+                            <a href="mailto:secretary@novoroscement.ru">
                                 secretary@novoroscement.ru
                             </a>
                         </li>
@@ -256,7 +265,7 @@
 
         <!-- HAMB SITE -->
         <section class="dark-wrap footer-wrap hamb-wrap hide">
-            <div class="content">
+            <div class="content desktop-hamb">
                 <div class="hamb">
                     <div class="hamb__left">
                         <a href="#" class="hamb__links">
@@ -284,10 +293,85 @@
                     <img src="image/logo-big.svg" alt="logo-big">
                 </div>
                 <div class="contact">
-                    <a href="#" class="contact__link">8 (8617) 79 52 92</a>
-                    <a href="#" class="contact__link">secretary@novoroscement.ru</a>
+                    <a href="tel:8(617)795292" class="contact__link">8 (8617) 79 52 92</a>
+                    <a href="mailto:secretary@novoroscement.ru" class="contact__link">secretary@novoroscement.ru</a>
                 </div>
             </div>
+
+            <div class="mobile-hamb">
+                    <nav class="company-links mobile-hamb__header">
+                        <a href="tel:8(617)795292" class="company-links__item company-links__item_phone company-links__item_bold">
+                            8(617) 79-52-92
+                        </a>
+                        <a href="#" class="company-links__item">
+                            <img class='people' src="./image/header/user.png" alt="Личный кабинет">
+                            <span class="mobile-hamb__text  company-links__item_bold">
+                                Личный кабинет
+                            </span>
+                        </a>
+                        <button class="map__close close-hamb-mob-btn">
+                            <img src="image/close.svg" alt="close">
+                        </button>
+                    </nav>
+                <div class="mobile-hamb__accord acor-container-mobile">
+                    <input type="checkbox" name="chacor" id="chacor1"/>
+                    <label for="chacor1">Каталог</label>
+                    <div class="acor-body">
+                        <a href="#" class="acor-link active">Весь каталог</a>
+                        <a href="#" class="acor-link">мешки 50 кг</a>
+                        <a href="#" class="acor-link">Мешки 50 кг на плалетах по 1500 кг</a>
+                        <a href="#" class="acor-link">навал</a>
+                        <a href="#" class="acor-link">мешки 25 кг</a>
+                        <a href="#" class="acor-link">Мешка 25 кг на палетах  по 1400 кг</a>
+                        <a href="#" class="acor-link">мкр 1500 кг</a>
+                    </div>
+
+                    <input type="checkbox" name="chacor" id="chacor2" />
+                    <label for="chacor2">Компания</label>
+                    <div class="acor-body">
+                        <p>Описание вкладки</p>
+                    </div>
+
+                    <input type="checkbox" name="chacor" id="chacor3" />
+                    <label for="chacor3">Покупателю</label>
+                    <div class="acor-body">
+                        <p>Описание вкладки</p>
+                    </div>
+                    <input type="checkbox" name="chacor" id="chacor4" />
+                    <label for="chacor4">пресс центр</label>
+                    <div class="acor-body">
+                        <p>Описание вкладки</p>
+                    </div>
+                    <input type="checkbox" name="chacor" id="chacor5" />
+                    <label for="chacor5">контакты</label>
+                    <div class="acor-body">
+                        <p>Описание вкладки</p>
+                    </div>
+                </div>
+                <div class="mobile-hamb__footer">
+                    <a href="">8 (8617) 79 52 92</a>
+                    <a href="">secretary@novoroscement.ru</a>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- SEARCH -->
+        <section class="dark-wrap search-wrap hide">
+           <div class="content">
+               <div class="search">
+                <div class="search__title">
+                    <h2>Поиск на сайте</h2>
+                    <button class="map__close close-search-btn">
+                        <img src="image/close.svg" alt="close">
+                    </button>
+                </div>
+                <div class="search__panel">
+                    <input class="search__input" type="text" placeholder="Введите запрос для поиска">
+                    <img class="search__icon" type="text" src="./image/header/loupe.png">
+                </div>
+               </div>
+           </div>
         </section>
 
     </header>
@@ -511,12 +595,52 @@
                         <small>(5 mb max)</small>
                         <input type="file" id="file">
                     </label>
-                    <input type="submit" class="submit-form__button active" value="Текст кнопки">
-                    <input type="submit" class="submit-form__button" value="Отмена">
+                    <input type="submit" class="btn-link submit-form__button active" value="Текст кнопки">
+                    <input type="submit" class="btn-link btn-link_dark submit-form__button" value="Отмена">
                 </div>
             </form>
             <h2 class="section-title">Заголовок H2 - Пример таблицы</h2>
-            <div class="divTable unstyledTable">
+
+            <div class="table-grid">
+                <div class="table-grid__row">
+                    <div class="table-grid__items table-grid__items_header">
+                        <p>
+                            Заголовок таблицы
+                        </p>
+                    </div>
+                    <div class="table-grid__items">
+                        <p>Значение</p>
+                    </div>
+                    <div class="table-grid__items">
+                        <p>Значение</p>
+                    </div>
+                </div>
+                <div class="table-grid__row">
+                    <div class="table-grid__items table-grid__items_header">
+                        <p>Заголовок таблицы</p>
+                    </div>
+                    <div class="table-grid__items">
+                        <p>Значение</p>
+                    </div>
+                    <div class="table-grid__items">
+                        <p>Значение</p>
+                    </div>
+                </div>
+                <div class="table-grid__row">
+                    <div class="table-grid__items table-grid__items_header">
+                        <p>Заголовок таблицы</p>
+                    </div>
+                    <div class="table-grid__items">
+                        <p>Значение</p>
+                    </div>
+                    <div class="table-grid__items">
+                        <p>Значение</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- <div class="divTable unstyledTable">
                 <div class="divTableHeading">
                 <div class="divTableRow">
                 <div class="divTableHead">Заголовок</div>
@@ -536,7 +660,9 @@
                 <div class="divTableCell">Значение</div>
                 </div>
                 </div>
-            </div>
+            </div> -->
+
+
             <h2 class="section-title">Заголовок H2 - Пример нумерованного списка</h2>
             <div class="num-list">
                 <ol class="num-list__items">
@@ -647,8 +773,6 @@
 
     <!-- FOOTER -->
 
-
-
     <section class="dark-wrap footer-wrap">
         <div class="content">
             <div class="footer-link">
@@ -725,6 +849,11 @@
                             Новости
                         </a>
                     </li>
+                    <li class="column-footer__item column-footer__item_link red-box">
+                        <a href="">
+                            ПРЕДЛОЖИТЬ ИДЕЮ <br> ПО УЛУЧШЕНИЮ <br> КОМПАНИИ
+                        </a>
+                    </li>
                 </ul>
                 <ul class="footer-link__item column-footer">
                     <li class="column-footer__item column-footer__item_heading">
@@ -770,12 +899,12 @@
                         </a>
                     </li>
                     <li class="column-footer__item column-footer__item_link">
-                        <a class="title_red medium-text" href="#">
+                        <a class="title_red medium-text" href="tel:8(617)795292">
                             8 (8617) 79 52 92
                         </a>
                     </li>
                     <li class="column-footer__item column-footer__item_link">
-                        <a href="">
+                        <a href="mailto:secretary@novoroscement.ru">
                             secretary@novoroscement.ru
                         </a>
                     </li>
@@ -791,8 +920,8 @@
                         </a>
                     </li>
                     <li class="column-footer__item column-footer__item_link">
-                        <a class="medium-text" href="">
-                            8 (8617) 79 52 99
+                        <a class="medium-text" href="tel:8(617)795292">
+                            8 (617) 795 29 92
                         </a>
                     </li>
                     <li class="column-footer__item column-footer__item_link">
@@ -808,7 +937,7 @@
                     <span>ОГРН: 1053600591197</span>
                 </div>
                 <div class="footer-subtitle__item">
-                    <span>Дизайн отрисовал VanGogh</span>
+                    <a href="https://vangogh-agency.ru/">Дизайн отрисовал VanGogh</a>
                 </div>
             </div>
         </div>
@@ -820,8 +949,10 @@
                 <div class="footer-bottom__item">
                     © 2007 – 2020 ОАО Новоросцемент.
                 </div>
-                <img class="footer-bottom__item" src="./image/logo-dark.png" alt="logo-dark">
-                <div class="footer-bottom__item red-box">
+                <a href="index.html" class="footer-bottom__item">
+                    <img class="footer-bottom__item" src="./image/logo-dark.png" alt="logo-dark">
+                </a>
+                <div class="footer-bottom__item scroll-top">
                     <img src="./image/arrowTop.png" alt="arrow-top">
                 </div>
             </div>

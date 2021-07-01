@@ -148,7 +148,8 @@
 .breadcrumbs__list{
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
+    margin-bottom: 0px; 
 }
 
 .breadcrumbs__item{
@@ -159,6 +160,7 @@
 }
 
 .breadcrumbs__link{
+    display: flex;
     font-size: 13px;
     font-weight: 400;
     line-height: 20px;
@@ -168,6 +170,7 @@
 }
 
 .breadcrumbs__link::after{
+    transform: translateY(3px);
     padding-left: 20px;
     content: url('../image/arrow-right.svg');
 
