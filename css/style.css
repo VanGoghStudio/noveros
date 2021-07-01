@@ -125,8 +125,7 @@ a{
 }
 
 .dark-wrap{
-    background-color: #303030;
-    ;
+    background-color: #383838;
     color: #FFFFFF;
 }
 
@@ -187,6 +186,7 @@ a{
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    padding: 0px 50px;  
 }
 
 .main__title{
@@ -1024,7 +1024,6 @@ a{
     align-items: flex-start ;
     text-transform: uppercase;
     flex-basis: 20%;
-    flex-grow: 1;
     padding: 0;
     font-weight: 700;
 }
@@ -2447,6 +2446,7 @@ h3.banner-item__title{
 }
 
 .search-wrap{
+    background: #303030;
     padding: 50px 0px 70px;
     width: 100%;
     position: absolute;

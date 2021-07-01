@@ -283,8 +283,7 @@
 }
 
 .logo-basket{
-    height: 25px;
-    transform: translateX(-2px);
+    height: 30px;
 }
 
 @media screen and (max-width: 1200.25px) {
