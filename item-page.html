@@ -13,6 +13,7 @@
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/accor.css">
     <link rel="stylesheet" href="css/catalog.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -28,22 +29,22 @@
                 Карта сайта
             </button>
             <nav class="company-links">
-                <a href="#" class="company-links__item">
+                <a href="#" class="company-links__item company-links__item_company">
                     О компании
                 </a>
                 <a href="#" class="company-links__item">
                     Контакты
                 </a>
-                <a href="tel:8(617)795292" class="company-links__item">
+                <a href="tel:8(617)795292" class="company-links__item company-links__item_bold">
                     8(617) 79-52-92
                 </a>
                 <a href="#" class="company-links__item">
-                    <img class='people' src="./image/header/user.png" alt="Личный кабинет">
+                    <img class='people' src="./image/header/user.svg" alt="Личный кабинет">
                     <span class="company-links__text">
                         Личный кабинет
                     </span>
                 </a>
-                <a href="#" class="company-links__item">
+                <a href="#" class="company-links__item open-search-btn">
                     <img class="loupe" src="./image/header/loupe.png" alt="Поиск">
                 </a>
             </nav>
@@ -53,7 +54,7 @@
                 <a href="index.html" class="logo-company">
                     <img src="./image/logo.png" alt="Логотип" class="catalog-links__item">
                 </a>
-                <a href="catalog.html" class="catalog-links__item catalog-header-btn">
+                <a href="catalog.html" class="catalog-links__item catalog-links__item_catalog">
                     Каталог
                     <div class="line-open"></div>
                 </a>
@@ -67,17 +68,17 @@
             <nav class="basket-links">
                 <div class="basket-links__item">Корзина</div>
                 <div class="basket-links__item">
-                    <img class="logo-basket" src="./image/header/cart.png" alt="basket">
+                    <img class="logo-basket" src="./image/header/cart.svg" alt="basket">
                 </div>
                 <div class="basket-links__item open-hamb-btn">
-                   <img src="image/menu.svg" alt="basket" class="open-hamb-img">
+                    <img src="image/menu.svg" alt="basket" class="open-hamb-img">
                 </div>
                 <!-- <span class="line-open line-open_bold open-hamb-btn"></span> -->
             </nav>
         </section>
         <!-- MENU -->
         <!-- MAP SITE -->
-        <section class="dark-wrap footer-wrap map-wrap">
+        <section class="dark-wrap footer-wrap map-wrap hide">
             <div class="content">
                 <div class="map">
                     <h2 class="map__title">Карта сайта</h2>
@@ -168,7 +169,7 @@
                     <ul class="footer-link__item column-footer">
                         <li class="column-footer__item column-footer__item_heading">
                             <a href="#">
-                                Покупателю  
+                                Покупателю
                             </a>
                         </li>
                         <li class="column-footer__item column-footer__item_link">
@@ -205,7 +206,7 @@
                     <ul class="footer-link__item column-footer">
                         <li class="column-footer__item column-footer__item_heading">
                             <a href="#">
-                                Контакты  
+                                Контакты
                             </a>
                         </li>
                         <li class="column-footer__item column-footer__item_link">
@@ -235,7 +236,7 @@
                             </a>
                         </li>
                         <li class="column-footer__item column-footer__item_link">
-                            <a  class="red-link news__link">
+                            <a class="red-link news__link">
                                 Все контакты
                             </a>
                         </li>
@@ -255,7 +256,7 @@
 
         <!-- HAMB SITE -->
         <section class="dark-wrap footer-wrap hamb-wrap hide">
-            <div class="content">
+            <div class="content desktop-hamb">
                 <div class="hamb">
                     <div class="hamb__left">
                         <a href="#" class="hamb__links">
@@ -264,7 +265,7 @@
                     </div>
                     <div class="hamb__right">
                         <a href="#" class="hamb__links">
-                            <img class='hamb__icon people' src="./image/header/user.png" alt="Личный кабинет">
+                            <img class='hamb__icon people' src="/image/header/user.svg" alt="Личный кабинет">
                             Личный кабинет
                         </a>
                         <a href="#" class="hamb__links">
@@ -287,6 +288,81 @@
                     <a href="mailto:secretary@novoroscement.ru" class="contact__link">secretary@novoroscement.ru</a>
                 </div>
             </div>
+
+            <div class="mobile-hamb">
+                    <nav class="company-links mobile-hamb__header">
+                        <a href="tel:8(617)795292" class="company-links__item company-links__item_phone company-links__item_bold">
+                            8(617) 79-52-92
+                        </a>
+                        <a href="#" class="company-links__item">
+                            <img class='people' src="./image/header/user.svg" alt="Личный кабинет">
+                            <span class="mobile-hamb__text  company-links__item_bold">
+                                Личный кабинет
+                            </span>
+                        </a>
+                        <button class="map__close close-hamb-mob-btn">
+                            <img src="image/close.svg" alt="close">
+                        </button>
+                    </nav>
+                <div class="mobile-hamb__accord acor-container-mobile">
+                    <input type="checkbox" name="chacor" id="chacor1"/>
+                    <label for="chacor1">Каталог</label>
+                    <div class="acor-body">
+                        <a href="#" class="acor-link active">Весь каталог</a>
+                        <a href="#" class="acor-link">мешки 50 кг</a>
+                        <a href="#" class="acor-link">Мешки 50 кг на плалетах по 1500 кг</a>
+                        <a href="#" class="acor-link">навал</a>
+                        <a href="#" class="acor-link">мешки 25 кг</a>
+                        <a href="#" class="acor-link">Мешка 25 кг на палетах  по 1400 кг</a>
+                        <a href="#" class="acor-link">мкр 1500 кг</a>
+                    </div>
+
+                    <input type="checkbox" name="chacor" id="chacor2" />
+                    <label for="chacor2">Компания</label>
+                    <div class="acor-body">
+                        <p>Описание вкладки</p>
+                    </div>
+
+                    <input type="checkbox" name="chacor" id="chacor3" />
+                    <label for="chacor3">Покупателю</label>
+                    <div class="acor-body">
+                        <p>Описание вкладки</p>
+                    </div>
+                    <input type="checkbox" name="chacor" id="chacor4" />
+                    <label for="chacor4">пресс центр</label>
+                    <div class="acor-body">
+                        <p>Описание вкладки</p>
+                    </div>
+                    <input type="checkbox" name="chacor" id="chacor5" />
+                    <label for="chacor5">контакты</label>
+                    <div class="acor-body">
+                        <p>Описание вкладки</p>
+                    </div>
+                </div>
+                <div class="mobile-hamb__footer">
+                    <a href="">8 (8617) 79 52 92</a>
+                    <a href="">secretary@novoroscement.ru</a>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- SEARCH -->
+        <section class="dark-wrap search-wrap hide">
+           <div class="content">
+               <div class="search">
+                <div class="search__title">
+                    <h2>Поиск на сайте</h2>
+                    <button class="map__close close-search-btn">
+                        <img src="image/close.svg" alt="close">
+                    </button>
+                </div>
+                <div class="search__panel">
+                    <input class="search__input" type="text" placeholder="Введите запрос для поиска">
+                    <img class="search__icon" type="text" src="./image/header/loupe.png">
+                </div>
+               </div>
+           </div>
         </section>
 
     </header>
@@ -321,6 +397,8 @@
                     <div class="grid-item__image">
                         <img src="./image/catalog/red-big.png" alt="Цемент бездобавочный">
                     </div>
+                </div>
+                <div class="banner-wrap">
                     <div class="grid-item__features banner-item banner-item_dark">
                         <div class="banner-item__text">
                             <h3 class="banner-item__title title_white">
@@ -347,59 +425,59 @@
                             <img src="./image/advantages/banner-bag.png" alt="Цемент">
                         </div>
                     </div>
-                    <div class="grid-item__other other-block">
-                        <h2 class="other-block__title section-title">
-                            Эта марка в другой упаковке
-                        </h2>
-                        <a href="#" class="other-block__item other-card">
-                            <div class="other-card__image">
-                                <img src="./image/catalog/red-bag.svg" alt="Другой цемент">
+                </div>
+                <div class="grid-item__other other-block">
+                    <h2 class="other-block__title section-title">
+                        Эта марка в другой упаковке
+                    </h2>
+                    <a href="#" class="other-block__item other-card">
+                        <div class="other-card__image">
+                            <img src="./image/catalog/red-bag.svg" alt="Другой цемент">
+                        </div>
+                        <div class="other-card__text">
+                            <h4 class="section-title other-card__title">
+                                ЦЕМ I 42,5Н (ПЦ 500 Д-0) / Мешок 50 кг
+                            </h4>
+                            <p class="other-card__paragraph">
+                                Масса 50 кг
+                            </p>
+                            <div class="other-card__price">
+                                299.50 руб.
                             </div>
-                            <div class="other-card__text">
-                                <h4 class="section-title other-card__title">
-                                    ЦЕМ I 42,5Н (ПЦ 500 Д-0) / Мешок 50 кг
-                                </h4>
-                                <p class="other-card__paragraph">
-                                    Масса 50 кг
-                                </p>
-                                <div class="other-card__price">
-                                    299.50 руб.
-                                </div>
+                        </div>
+                    </a>
+                    <a href="#" class="other-block__item other-card">
+                        <div class="other-card__image">
+                            <img src="./image/catalog/red-bag.svg" alt="Другой цемент">
+                        </div>
+                        <div class="other-card__text">
+                            <h4 class="section-title other-card__title">
+                                ЦЕМ I 42,5Н (ПЦ 500 Д-0) / Мешок 50 кг
+                            </h4>
+                            <p class="other-card__paragraph">
+                                Масса 50 кг
+                            </p>
+                            <div class="other-card__price">
+                                299.50 руб.
                             </div>
-                        </a>
-                        <a href="#" class="other-block__item other-card">
-                            <div class="other-card__image">
-                                <img src="./image/catalog/red-bag.svg" alt="Другой цемент">
+                        </div>
+                    </a>
+                    <a href="#" class="other-block__item other-card">
+                        <div class="other-card__image">
+                            <img src="./image/catalog/red-bag.svg" alt="Другой цемент">
+                        </div>
+                        <div class="other-card__text">
+                            <h4 class="section-title other-card__title">
+                                ЦЕМ I 42,5Н (ПЦ 500 Д-0) / Мешок 50 кг
+                            </h4>
+                            <p class="other-card__paragraph">
+                                Масса 50 кг
+                            </p>
+                            <div class="other-card__price">
+                                299.50 руб.
                             </div>
-                            <div class="other-card__text">
-                                <h4 class="section-title other-card__title">
-                                    ЦЕМ I 42,5Н (ПЦ 500 Д-0) / Мешок 50 кг
-                                </h4>
-                                <p class="other-card__paragraph">
-                                    Масса 50 кг
-                                </p>
-                                <div class="other-card__price">
-                                    299.50 руб.
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="other-block__item other-card">
-                            <div class="other-card__image">
-                                <img src="./image/catalog/red-bag.svg" alt="Другой цемент">
-                            </div>
-                            <div class="other-card__text">
-                                <h4 class="section-title other-card__title">
-                                    ЦЕМ I 42,5Н (ПЦ 500 Д-0) / Мешок 50 кг
-                                </h4>
-                                <p class="other-card__paragraph">
-                                    Масса 50 кг
-                                </p>
-                                <div class="other-card__price">
-                                    299.50 руб.
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
 
                 <div class="grid-item__text">
@@ -414,7 +492,7 @@
                                     <div class="submit-form__criteria">
                                         Цена
                                     </div>
-                                    <div class="submit-form__value title_red">
+                                    <div class="submit-form__value title_red price-item">
                                         154.75 руб. / 25 кг
                                     </div>
                                 </div>
@@ -451,136 +529,210 @@
                         <h3 class="desc-text section-title">
                             Характеристики
                         </h3>
-                        <div class="divTable unstyledTable">
-                            <div class="divTableBody">
-                            <div class="divTableRow">
-                                <div class="divTableCell table-crit">Класс прочности:</div>
-                                <div class="divTableCell table-value">З42,5Н (не менее 425 и не более 625кгс/см2)</div>
+
+                        <div class="table-grid">
+                            <div class="table-grid__row">
+                                <div class="table-grid__items item-grid__items item-grid__items_header">
+                                    <p>
+                                        Класс прочности:
+                                    </p>
+                                </div>
+                                <div class="table-grid__items item-grid__items">
+                                    <p>З42,5Н (не менее 425 и не более 625кгс/см2)</p>
+                                </div>
                             </div>
-                            <div class="divTableRow">
-                                <div class="divTableCell table-crit">Минеральная добавка — опока:</div>
-                                <div class="divTableCell table-value">Нет</div>
+                            <div class="table-grid__row">
+                                <div class="table-grid__items item-grid__items item-grid__items_header">
+                                    <p>Удельная эффективная активность естественных радионуклидов:</p>
+                                </div>
+                                <div class="table-grid__items item-grid__items">
+                                    <p>Значение</p>
+                                </div>
                             </div>
-                            <div class="divTableRow">
-                                <div class="divTableCell table-crit">Удельная эффективная активность естественных радионуклидов:</div>
-                                <div class="divTableCell table-value">Не более 370 бк/кг</div>
+                            <div class="table-grid__row">
+                                <div class="table-grid__items item-grid__items item-grid__items_header">
+                                    <p>Удельная эффективная активность естественных радионуклидов:</p>
+                                </div>
+                                <div class="table-grid__items item-grid__items">
+                                    <p>Значение</p>
                                 </div>
                             </div>
                         </div>
+
+                    
+
                         <h3 class="desc-text section-title">
                             Химический состав
                         </h3>
-                        <div class="divTable unstyledTable">
-                            <div class="divTableBody">
-                            <div class="divTableRow">
-                                <div class="divTableCell table-crit">Класс прочности:</div>
-                                <div class="divTableCell table-value">З42,5Н (не менее 425 и не более 625кгс/см2)</div>
+                        <div class="table-grid">
+                            <div class="table-grid__row">
+                                <div class="table-grid__items item-grid__items item-grid__items_header">
+                                    <p>
+                                        Класс прочности:
+                                    </p>
+                                </div>
+                                <div class="table-grid__items item-grid__items">
+                                    <p>З42,5Н (не менее 425 и не более 625кгс/см2)</p>
+                                </div>
                             </div>
-                            <div class="divTableRow">
-                                <div class="divTableCell table-crit">Минеральная добавка — опока:</div>
-                                <div class="divTableCell table-value">Нет</div>
+                            <div class="table-grid__row">
+                                <div class="table-grid__items item-grid__items item-grid__items_header">
+                                    <p>Удельная эффективная активность естественных радионуклидов:</p>
+                                </div>
+                                <div class="table-grid__items item-grid__items">
+                                    <p>Значение</p>
+                                </div>
                             </div>
-                            <div class="divTableRow">
-                                <div class="divTableCell table-crit">Удельная эффективная активность естественных радионуклидов:</div>
-                                <div class="divTableCell table-value">Не более 370 бк/кг</div>
+                            <div class="table-grid__row">
+                                <div class="table-grid__items item-grid__items item-grid__items_header">
+                                    <p>Удельная эффективная активность естественных радионуклидов:</p>
+                                </div>
+                                <div class="table-grid__items item-grid__items">
+                                    <p>Значение</p>
                                 </div>
                             </div>
                         </div>
                         <h3 class="desc-text section-title">
                             Минералогический состав клинкера
                         </h3>
-                        <div class="divTable unstyledTable">
-                            <div class="divTableBody">
-                            <div class="divTableRow">
-                                <div class="divTableCell table-crit">Класс прочности:</div>
-                                <div class="divTableCell table-value">З42,5Н (не менее 425 и не более 625кгс/см2)</div>
+                        <div class="table-grid">
+                            <div class="table-grid__row">
+                                <div class="table-grid__items item-grid__items item-grid__items_header">
+                                    <p>
+                                        Класс прочности:
+                                    </p>
+                                </div>
+                                <div class="table-grid__items item-grid__items">
+                                    <p>З42,5Н (не менее 425 и не более 625кгс/см2)</p>
+                                </div>
                             </div>
-                            <div class="divTableRow">
-                                <div class="divTableCell table-crit">Минеральная добавка — опока:</div>
-                                <div class="divTableCell table-value">Нет</div>
+                            <div class="table-grid__row">
+                                <div class="table-grid__items item-grid__items item-grid__items_header">
+                                    <p>Удельная эффективная активность естественных радионуклидов:</p>
+                                </div>
+                                <div class="table-grid__items item-grid__items">
+                                    <p>Значение</p>
+                                </div>
                             </div>
-                            <div class="divTableRow">
-                                <div class="divTableCell table-crit">Удельная эффективная активность естественных радионуклидов:</div>
-                                <div class="divTableCell table-value">Не более 370 бк/кг</div>
+                            <div class="table-grid__row">
+                                <div class="table-grid__items item-grid__items item-grid__items_header">
+                                    <p>Удельная эффективная активность естественных радионуклидов:</p>
+                                </div>
+                                <div class="table-grid__items item-grid__items">
+                                    <p>Значение</p>
                                 </div>
                             </div>
                         </div>
                         <h3 class="desc-text section-title">
                             Физико-механические характеристики цемента:
                         </h3>
-                        <div class="grid-table">
-                            <div class="grid-table__head">
-                                Тонкость помола
-                            </div>
-                            <div class="grid-table__row">
-                                <div class="grid-table__items grid-table__items_crit">
-                                    Удельная поверхность (по Блейну):
-                                </div>
-                                <div class="grid-table__items grid-table__items_crit">
-                                    Остаток на сите с сеткой №008:
-                                </div>
-                                <div class="grid-table__items grid-table__items_crit">
-                                    Остаток на сите с сеткой №008:
+
+                        <div class="table-grid">
+                            <div class="table-grid__row">
+                                <div class="table-grid__items item-grid__items item-grid__items_header item-grid__items_bold">
+                                    <p>Тонкость помола</p>
                                 </div>
                             </div>
-                            <div class="grid-table__row">
-                                <div class="grid-table__items">не менее 60%</div>
-                                <div class="grid-table__items">не менее 60%</div>
-                                <div class="grid-table__items">не менее 60%</div>
-                            </div>
-                            <div class="grid-table__head">
-                                Тонкость помола
-                            </div>
-                            <div class="grid-table__row">
-                                <div class="grid-table__items grid-table__items_crit">
-                                    Удельная поверхность (по Блейну):
+                            <div class="table-grid__row">
+                                <div class="table-grid__items item-grid__items">
+                                    <p>Удельная поверхность (по Блейну):</p>
                                 </div>
-                                <div class="grid-table__items grid-table__items_crit">
-                                    Остаток на сите с сеткой №008:
+                                <div class="table-grid__items item-grid__items">
+                                    <p>Значение</p>
                                 </div>
                             </div>
-                            <div class="grid-table__row">
-                                <div class="grid-table__items">не менее 60%</div>
-                                <div class="grid-table__items">не менее 60%</div>
+                            <div class="table-grid__row">
+                                <div class="table-grid__items item-grid__items">
+                                    <p>Остаток на сите с сеткой №008:</p>
+                                </div>
+                                <div class="table-grid__items item-grid__items">
+                                    <p>Значение</p>
+                                </div>
+                            </div>
+                            <div class="table-grid__row">
+                                <div class="table-grid__items item-grid__items">
+                                    <p>Нормальная густота цементного теста:</p>
+                                </div>
+                                <div class="table-grid__items item-grid__items">
+                                    <p>Значение</p>
+                                </div>
+                            </div>
+                            <div class="table-grid__row">
+                                <div class="table-grid__items item-grid__items item-grid__items_header item-grid__items_bold">
+                                    <p>Сроки схватывания, (час-мин)</p>
+                                </div>
+                            </div>
+                            <div class="table-grid__row">
+                                <div class="table-grid__items item-grid__items">
+                                    <p>Начало</p>
+                                </div>
+                                <div class="table-grid__items item-grid__items">
+                                    <p>Значение</p>
+                                </div>
+                            </div>
+                            <div class="table-grid__row">
+                                <div class="table-grid__items item-grid__items">
+                                    <p>Окончание</p>
+                                </div>
+                                <div class="table-grid__items item-grid__items">
+                                    <p>Значение</p>
+                                </div>
                             </div>
                         </div>
+
                         <h3 class="desc-text section-title">
                             Прочность, МПа, не менее
                         </h3>
-                        <div class="grid-table">
-                            <div class="grid-table__head">
-                                Тонкость помола
-                            </div>
-                            <div class="grid-table__row">
-                                <div class="grid-table__items grid-table__items_crit">
-                                    Удельная поверхность (по Блейну):
-                                </div>
-                                <div class="grid-table__items grid-table__items_crit">
-                                    Остаток на сите с сеткой №008:
-                                </div>
-                                <div class="grid-table__items grid-table__items_crit">
-                                    Остаток на сите с сеткой №008:
+                        <div class="table-grid">
+                            <div class="table-grid__row">
+                                <div class="table-grid__items item-grid__items item-grid__items_header item-grid__items_bold">
+                                    <p>Тонкость помола</p>
                                 </div>
                             </div>
-                            <div class="grid-table__row">
-                                <div class="grid-table__items">не менее 60%</div>
-                                <div class="grid-table__items">не менее 60%</div>
-                                <div class="grid-table__items">не менее 60%</div>
-                            </div>
-                            <div class="grid-table__head">
-                                Тонкость помола
-                            </div>
-                            <div class="grid-table__row">
-                                <div class="grid-table__items grid-table__items_crit">
-                                    Удельная поверхность (по Блейну):
+                            <div class="table-grid__row">
+                                <div class="table-grid__items item-grid__items">
+                                    <p>Удельная поверхность (по Блейну):</p>
                                 </div>
-                                <div class="grid-table__items grid-table__items_crit">
-                                    Остаток на сите с сеткой №008:
+                                <div class="table-grid__items item-grid__items">
+                                    <p>Значение</p>
                                 </div>
                             </div>
-                            <div class="grid-table__row">
-                                <div class="grid-table__items">не менее 60%</div>
-                                <div class="grid-table__items">не менее 60%</div>
+                            <div class="table-grid__row">
+                                <div class="table-grid__items item-grid__items">
+                                    <p>Остаток на сите с сеткой №008:</p>
+                                </div>
+                                <div class="table-grid__items item-grid__items">
+                                    <p>Значение</p>
+                                </div>
+                            </div>
+                            <div class="table-grid__row">
+                                <div class="table-grid__items item-grid__items">
+                                    <p>Нормальная густота цементного теста:</p>
+                                </div>
+                                <div class="table-grid__items item-grid__items">
+                                    <p>Значение</p>
+                                </div>
+                            </div>
+                            <div class="table-grid__row">
+                                <div class="table-grid__items item-grid__items item-grid__items_header item-grid__items_bold">
+                                    <p>Сроки схватывания, (час-мин)</p>
+                                </div>
+                            </div>
+                            <div class="table-grid__row">
+                                <div class="table-grid__items item-grid__items">
+                                    <p>Начало</p>
+                                </div>
+                                <div class="table-grid__items item-grid__items">
+                                    <p>Значение</p>
+                                </div>
+                            </div>
+                            <div class="table-grid__row">
+                                <div class="table-grid__items item-grid__items">
+                                    <p>Окончание</p>
+                                </div>
+                                <div class="table-grid__items item-grid__items">
+                                    <p>Значение</p>
+                                </div>
                             </div>
                         </div>
                     </div>
