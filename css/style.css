@@ -1858,7 +1858,9 @@ ol>li::marker {
 
 .header-post-wrap_bg {
     padding: 70px 0 60px;
-    background: url('../image/text-cont/main-bg.png');
+    background-image: url('../image/text-cont/main-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .header-post-wrap_bg>.content {
