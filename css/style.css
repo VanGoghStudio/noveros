@@ -13,7 +13,7 @@ ______________________________________________________________
 */
 
 @font-face {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat';
     src: url("../fonts/Montserrat-Medium.woff2"), 
     url("../fonts/Montserrat-Medium.woff");
     font-weight: 500;
@@ -21,10 +21,18 @@ ______________________________________________________________
     font-display: swap; 
 }
 @font-face {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat';
     src: url("../fonts/Montserrat-SemiBold.woff2"), 
     url("../fonts/Montserrat-SemiBold.woff");
     font-weight: 700;
+    font-style: normal;
+    font-display: swap; 
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../fonts/Montserrat-Thin.woff2"), 
+    url("../fonts/Montserrat-Thin.woff.woff");
+    font-weight: 100;
     font-style: normal;
     font-display: swap; 
 }
@@ -274,6 +282,7 @@ a {
     font-size: 80px;
     font-weight: 100;
     color: #FFFFFF;
+    margin-right: -5px;
 }
 
 /* SUMMARY BLOCK */
