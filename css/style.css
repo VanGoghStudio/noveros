@@ -12,6 +12,23 @@ ______________________________________________________________
 
 */
 
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url("../fonts/Montserrat-Medium.woff2"), 
+    url("../fonts/Montserrat-Medium.woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap; 
+}
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url("../fonts/Montserrat-SemiBold.woff2"), 
+    url("../fonts/Montserrat-SemiBold.woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap; 
+}
+
 :root {
     --pomegranate-color: #FF4848;
 }
