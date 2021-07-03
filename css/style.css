@@ -2118,7 +2118,7 @@ h3.banner-item__title {
     max-width: 640px;
     width: 100%;
     bottom: 0%;
-    left: 0%;
+    left: calc(0% + 50px);
     padding: 50px;
 }
 
@@ -2902,6 +2902,22 @@ h3.banner-item__title {
     .banner-item__image{
         margin-left: 10px;
     }
+    .header-image{
+        background-position: 80% center;
+    }
+    .header-image, .header-image>.content{
+        min-height: 35vh;
+    }
+    .adv-company-wrap .card-about-us__item_short{
+        padding-bottom: 50px;
+        flex-basis: 40%;
+    }
+    .acor-body__content{
+        justify-content: flex-start;
+    }
+    /* .sticky-block{
+        max-width: ;
+    } */
 }
 
 @media screen and (max-width: 992.25px) {
@@ -2917,6 +2933,7 @@ h3.banner-item__title {
     .title {
         font-size: 25px;
         line-height: 35px;
+        margin-bottom: 30px;
     }
 
     .main {
@@ -3272,6 +3289,49 @@ h3.banner-item__title {
         max-width: 320px;
         position: static;
     }
+    .sticky-block{
+        padding: 30px;
+        max-width: 490px;
+    }
+    .sticky-block>h1{
+        margin-bottom: 20px;
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .major-text__paragraph_thin{
+        margin-bottom: 30px;
+    }
+    .major-text__paragraph_small{
+        font-size: 11px;
+    }
+    .acor-title_uper{
+        margin-right: 20%;
+        font-size: 12px;
+    }
+    .gallery__title{
+        margin-bottom: 30px;
+    }
+    .adv-company-wrap .card-about-us{
+        padding-bottom: 30px;
+    }
+    .acor-body .check-list__item{
+        font-size: 10px;
+    }
+    .acor-body__check-list{
+        flex-direction: column-reverse !important;
+    }
+    .acor-body__check-list .submit-form__button{
+        min-height: 50px;
+    }
+    .acor-body__check-list > .submit-form__button{
+        margin-top: 20px;
+    }
+    .check-list__item > .check-list__text::before{
+        transform: translateY(-15px);
+    }
+    .submit-form{
+        margin-bottom: 0px;
+    }
 }
 
 @media screen and (max-width: 759.25px) {
@@ -3382,6 +3442,9 @@ h3.banner-item__title {
         min-height: 270px;
         padding: 20px 15px;
         margin-bottom: 20px;
+    }
+    .adv-company-wrap .card-about-us__item_short{
+        flex-basis: 60%;
     }
     .card-about-us__item:last-child{
         margin-bottom: 0px; 
@@ -3554,6 +3617,19 @@ h3.banner-item__title {
         font-size: 10px;
         line-height: 15px;
     }
+    .acor-container > label, .acor-title_uper{
+        font-size: 10px;
+        margin-left: 5px;
+    }
+    .acor-container > label:before{
+        line-height: 56px;
+    }
+    .sticky-block{
+        max-width: 400px;
+    }
+    .acor-body .section-list > ul > li{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -3572,6 +3648,7 @@ h3.banner-item__title {
 
     .card-about-us__item {
         min-height: 215px;
+        align-items: center;
     }
 
     .company-links__item:nth-child(3) {
@@ -3697,7 +3774,7 @@ h3.banner-item__title {
     .card-about-us__item .advantages-block__title {
         font-size: 13px;
         line-height: 18px;
-        margin-bottom: 45px;
+        margin-bottom: 15px;
     }
     .card-about-us {
         padding-bottom: 40px;
@@ -3712,7 +3789,55 @@ h3.banner-item__title {
         max-width: 50%;
         padding-top: 15%;
     }
+    .sticky-block{
+        max-width: 300px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .sticky-block>h1{
+        font-size: 24px;
+        line-height: 31px;
+    }
+    .major-text__paragraph_thin{
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+    .major-text__paragraph_small{
+        line-height: 20px;
+    }
+    .acor-container > label{
+        flex-direction: column;
+    }
+    .acor-container > label > span{
+        width: 80%;
+        margin-bottom: 5px;
+    }
+    .acor-container > label, .acor-title_uper{
+        margin-left: 0px;
+    }
+    .send-vacancy > .submit-form {
+        padding: 0;
+    }
+    .acor-body .check-list__item{
+        font-size: 8px;
+        padding: 0px 10px 0px 30px;
+    }
+    .gallery__title{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .gallery__title>.link{
+        margin-left: 0px;
+    }
+    .advantages-block__paragraph{
+        font-size: 11px;
+        margin-top: 0px;
+    }
+    .adv-company-wrap .card-about-us__item_short{
+        padding: 20px 15px;
+    }
 }
+
 
 @media screen and (max-width: 350px) {
     .awards__title:nth-child(1) {

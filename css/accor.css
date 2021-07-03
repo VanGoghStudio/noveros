@@ -4,7 +4,6 @@
 .acor-container .acor-body {
     margin: 0 auto;
     height: 0;
-    color: rgba(0, 0, 0, 0);
     background-color: #F3F3F2;
     line-height: 18px;
     padding: 0 30px;
@@ -26,6 +25,8 @@
 }
 .acor-body .submit-form__button{
     margin-right: 80px;
+    max-width: 240px;
+    max-height: 70px;
 }
 .acor-body .check-list__item{
     font-size: 12px;
