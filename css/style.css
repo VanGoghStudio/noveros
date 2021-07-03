@@ -436,6 +436,7 @@ a {
 .card-about-us__item {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     min-height: 380px;
     font-size: 27px;
     font-weight: 700;
@@ -524,7 +525,6 @@ a {
 .advantages-block__photo {
     display: block;
     max-width: 100%;
-    object-fit: none;
     width: auto;
 }
 
@@ -609,7 +609,9 @@ a {
 .advantages-block_link {
     position: absolute;
     bottom: 10%;
-    border-bottom: 2px dashed #464646;
+}
+.advantages-block_link_white {
+    border-bottom: 2px solid #FFFFFF;
 }
 
 .number-about-us__title {
@@ -3262,6 +3264,14 @@ h3.banner-item__title {
         font-size: 28px;
         margin-bottom: 20px;
     }
+    /* CATALOG PAGE */
+    .advantages-block__number{
+        margin-bottom: 10px;
+    }
+    .card-about-us__item_full-long .advantages-block__photo{
+        max-width: 320px;
+        position: static;
+    }
 }
 
 @media screen and (max-width: 759.25px) {
@@ -3350,14 +3360,17 @@ h3.banner-item__title {
     .awards__headers .title {
         font-size: 22px;
     }
-
+    .card-about-us__item_full-long .advantages-block__photo{
+        max-width: 260px;
+    }
     .card-about-us__item .advantages-block__title {
-        font-size: 13px;
+        font-size: 16px;
         line-height: 18px;
         margin-bottom: 15px;
     }
 
     .card-about-us {
+        padding-top: 0px;
         padding-bottom: 40px;
     }
 
@@ -3366,12 +3379,19 @@ h3.banner-item__title {
     }
 
     .card-about-us__item {
-        min-height: 250px;
+        min-height: 270px;
         padding: 20px 15px;
+        margin-bottom: 20px;
+    }
+    .card-about-us__item:last-child{
+        margin-bottom: 0px; 
     }
 
     .advantages-block__number {
-        margin-bottom: 15px;
+        margin-bottom: 25px;
+    }
+    .advantages-block__photo_right{
+        top: 8%;
     }
 
     .advantages-block__photo {
@@ -3542,7 +3562,8 @@ h3.banner-item__title {
     }
 
     .advantages-block__photo {
-        max-width: 135px;
+        max-width: 130px;
+        margin-left: 5px;
     }
 
     .people {
@@ -3673,11 +3694,29 @@ h3.banner-item__title {
     .banner-item{
         padding: 20px 10px;
     }
- 
+    .card-about-us__item .advantages-block__title {
+        font-size: 13px;
+        line-height: 18px;
+        margin-bottom: 45px;
+    }
+    .card-about-us {
+        padding-bottom: 40px;
+    }
+    .advantages-block__number{
+        margin-bottom: 10px;
+    }
+    .advantages-block__photo_middle{
+        margin-top: 10px;
+    }
+    .card-about-us__item_full-long .advantages-block__photo{
+        max-width: 50%;
+        padding-top: 15%;
+    }
 }
 
 @media screen and (max-width: 350px) {
     .awards__title:nth-child(1) {
         margin-right: 10px;
     }
+   
 }
