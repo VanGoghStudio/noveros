@@ -35,29 +35,30 @@ document.addEventListener('DOMContentLoaded', function () {
     if (hambCategory && hambLinks) {
         let arrCategory = [{
                 id: 'каталог',
-                subtitle: ['Весь каталог', 'Мешки 50 КГ', 'МЕШКИ 50 КГ НА ПАЛЕТАХ ПО 1500 КГ', 'НАВАЛ', 'МЕШКИ 25 КГ', 'МЕШКИ 25 КГ НА ПАЛЕТАХ ПО 1400 КГ', 'МКР 1500 КГ']
+                subtitle: [['Весь каталог', 'catalog.html'], ['Мешки 50 КГ', 'catalog.html'], ['МЕШКИ 50 КГ НА ПАЛЕТАХ ПО 1500 КГ', 'catalog.html'], 
+                            ['НАВАЛ', 'catalog.html'], ['МЕШКИ 25 КГ', 'catalog.html'], ['МЕШКИ 25 КГ НА ПАЛЕТАХ ПО 1400 КГ', 'catalog.html'], ['МКР 1500 КГ', 'catalog.html']]
             },
             {
                 id: 'компания',
-                subtitle: ['Вакансии', 'Тендеры', 'О компании', 'Контакты', 'Новости', 'Предложить идею по улучшению компании']
+                subtitle: [['Вакансии', 'vacancy.html'], ['Тендеры', 'tenders.html'], ['О компании', 'text-bg.html'], ['Контакты', 'contact.html'], ['Новости', 'news.html'], ['Предложить идею по улучшению компании', 'idea.html']]
             },
             {
                 id: 'покупателю',
-                subtitle: ['Корзина', 'Доставка и оплата', 'Вход в личный кабинет', 'О компании', 'Контакты']
+                subtitle: [['Корзина', ''], ['Доставка и оплата', ''], ['Вход в личный кабинет', ''], ['О компании', 'text-bg.html'], ['Контакты', 'contact.html']]
             },
             {
                 id: 'пресс центр',
-                subtitle: ['пресс релизы', 'новости', 'о компании']
+                subtitle: [['пресс релизы', 'news.html'], ['Новости', 'news.html'], ['О компании', 'text-bg.html']]
             },
             {
                 id: 'контакты',
                 subtitle: [
-                    'все контакты',
-                    ['8 (8617) 79 52 92', 'red-text middle-text'],
-                    ['secretary@novoroscement.ru', 'tiny-text lower-text'],
-                    ['353902, Россия, Краснодарский край, г. Новороссийск, Сухумское шоссе, 60', 'small-text gray-text'],
-                    ['ФАКС', 'little-text bottom-text'],
-                    '8 (8617) 79 52 99'
+                    ['все контакты'],
+                    ['8 (8617) 79 52 92', 'tel:8(617)795292', 'red-text middle-text'],
+                    ['secretary@novoroscement.ru', 'mailto:secretary@novoroscement.ru', 'tiny-text lower-text'],
+                    ['353902,  Россия, Краснодарский край, г. Новороссийск, Сухумское шоссе, 60', '#map', 'small-text gray-text'],
+                    ['ФАКС', 'tel:8(617)795292', 'little-text bottom-text'],
+                    ['8 (617) 79 52 99', 'tel:8(617)795292']
                 ]
             }
         ]
@@ -84,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                         </li>`
                 } else {
                     hambLinks.innerHTML += `<li class="column-footer__item column-footer__item_link">
-                                            <a href="#" class='hamb-links__item ${item[1]}'>
+                                            <a href="${item[1]}" class='hamb-links__item ${item[2]}'>
                                                ${item[0]}
                                             </a>
                                         </li>`
