@@ -1740,6 +1740,8 @@ textarea {
 }
 
 .submit-form__button {
+    min-width: 240px;
+    max-height: 70px;
     margin-right: 30px;
     border: 2px solid #464646;
     background: transparent;
@@ -2439,7 +2441,9 @@ h3.banner-item__title {
 /* ************NEWS***************** */
 
 /* TENDERS */
-
+.submit-form_tenders{
+    padding: 0px;
+}
 .tenders-header {
     background-image: url('../image/tender-bg.png');
 }
@@ -2524,7 +2528,109 @@ h3.banner-item__title {
 .subscribe-tenders__value-link:last-child {
     margin-right: 0px;
 }
-
+.acor-body__text-section{
+    margin-bottom: 40px;
+}
+.tender-contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.tender-contact__item{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-grow: 1;
+}
+.tender-contact__item_thin{
+    flex-basis: 30%;
+    margin-left: 70px;
+}
+.tender-contact__item_bold{
+    flex-basis: 60%;
+}
+.tender-contact__text{
+    margin-bottom: 30px;
+}
+.tender-contact__text:last-child{
+    margin-bottom: 0px;
+}
+.tender-contact__block{
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.block-contact, .person-info{
+    padding: 30px;
+    background-color: #FFFFFF;
+    border: 2px solid #464646;
+}
+.person-info{
+    padding: 40px;
+}
+.block-contact:nth-child(even){
+    border-left: none;
+}
+.block-contact__title{
+    margin-bottom: 25px;
+    font-weight: 700;
+    line-height: 21px;
+}
+.block-contact__value{
+    font-weight: 700;
+    line-height: 22px;
+}
+.person-info__regaly{
+    margin-bottom: 10px;
+}
+.person-info__text-task{
+    margin-bottom: 40px;
+}
+.person-info__name{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+.person-info__contact{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.person-info__link{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: #464646;
+    margin-bottom: 15px;
+}
+.tender-button{
+    height: 70px;
+    width: 310px !important;
+}
+.img-sub{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-sub__text{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+    margin-left: 15px;
+    text-transform: none;
+}
+.img-sub::before{
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+    content: url('../image/calendar-dark.svg');
+}
 /* ***********TENDERS*************** */
 
 
@@ -2542,11 +2648,13 @@ h3.banner-item__title {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: flex-start;
+    align-items: stretch;
+    margin-bottom: 90px;
 }
 
 .idea-form__submit-form {
     max-width: 1085px;
+    margin-bottom: 0px;
 }
 
 .idea-form__check-list {
@@ -2586,6 +2694,8 @@ h3.banner-item__title {
 }
 
 .poster-awards__image {
+    display: block;
+    max-width: 100%;
     position: absolute;
     bottom: 0%;
     left: 0%;
@@ -2598,37 +2708,20 @@ h3.banner-item__title {
     flex-grow: 1;
 }
 
-.idea-table {
-    max-width: 100% !important;
+.idea-grid{
+    border-top: none;
+    border-left: none;
 }
-
-.idea-table .divTable.unstyledTable,
-.idea-table .divTableCell,
-.idea-table .divTable.unstyledTable .idea-table .divTableHead {
-    width: 25%;
-    font-size: 13px !important;
-    line-height: 21px !important;
-    border-left: none !important;
-    border-right: none !important;
+.idea-grid__row{
+    border-bottom: 2px solid #EDECE8;
 }
-
-.idea-table .divTableHead {
-    border: none !important;
-}
-
-.idea-table__header {
-    border-top: none !important;
-    font-size: 13px !important;
-    font-weight: 700 !important;
-    line-height: 18px !important;
-}
-
-.idea-table__main-text {
-    font-weight: 700 !important;
-    line-height: 21px !important;
+.idea-grid__item{
+    border: none;
+    padding: 20px;
 }
 
 /* *************IDEA*************** */
+
 
 /* MOB MENU */
 
@@ -2841,6 +2934,29 @@ h3.banner-item__title {
         margin: 0 auto;
         margin-bottom: 0px;
     }
+    .idea-form__submit-form .submit-form__content{
+        justify-content: stretch;
+    }
+    .idea-form__banner{
+        padding: 40px;
+    }
+    .idea-form__check-list{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: stretch;
+    }
+    .submit-form__button{
+        height: 70px;
+        margin-top: 20px;
+    }
+    .check-list__item{
+        padding-left: 40px;
+    }
+    .submit-form__input_text>input, .submit-form__input_text{
+        max-width: none !important;
+        margin: 0;
+        margin-bottom: 20px;
+    }   
 }
 
 @media screen and (max-width: 1024.25px) {
@@ -2923,17 +3039,40 @@ h3.banner-item__title {
         background-position: 80% center;
     }
     .header-image, .header-image>.content{
-        min-height: 35vh;
+        height: 35vh;
     }
     .adv-company-wrap .card-about-us__item_short{
         padding-bottom: 50px;
         flex-basis: 40%;
     }
     .acor-body__content{
+        width: 100%;
         justify-content: flex-start;
     }
     .subscribe-tenders__item{
         max-width: 100%;
+    }
+    .tender-contact{
+        flex-direction: column;
+    }
+    .tender-contact__item{
+        margin-bottom: 40px;
+    }
+    .tender-contact__item:last-child{
+        margin-bottom: 0px;
+    }
+    .tender-contact__item_thin{
+        margin-left: 0px;
+    }
+    .table-grid p{
+        font-size: 11px;
+        line-height: 21px;
+    }
+    .idea-form__banner{
+        display: none;
+    }
+    .idea-form__submit-form .active{
+        margin-right: 0px;
     }
 }
 
@@ -3337,11 +3476,10 @@ h3.banner-item__title {
     .acor-body__check-list{
         flex-direction: column-reverse !important;
     }
-    .acor-body__check-list .submit-form__button{
-        min-height: 50px;
-    }
     .acor-body__check-list > .submit-form__button{
+        min-height: 50px;
         margin-top: 20px;
+        width: 100% !important;
     }
     .check-list__item > .check-list__text::before{
         transform: translateY(-15px);
@@ -3588,6 +3726,10 @@ h3.banner-item__title {
         font-size: 18px;
         margin-bottom: 30px;
     }
+    p{
+        font-size: 11px;
+        line-height: 19px;
+    }
     .table-grid{
         margin-bottom: 30px;
     }
@@ -3636,7 +3778,7 @@ h3.banner-item__title {
         line-height: 15px;
     }
     .acor-container > label, .acor-title_uper{
-        font-size: 10px;
+        font-size: 9px;
         margin-left: 5px;
     }
     .acor-container > label:before{
@@ -3702,6 +3844,49 @@ h3.banner-item__title {
    }
    .acor-container > label{
        padding: 10px;
+   }
+   .img-sub{
+        font-size: 8px;
+        margin-right: 19%;
+        justify-content: flex-start;
+   }
+   .block-contact{
+       min-height: 170px;
+       padding: 10px;
+   }
+   .block-contact__title{
+       margin-bottom: 15px;
+   }
+   .person-info{
+       padding: 20px;
+   }
+   .open-tender__header{
+       margin-bottom: 30px;
+   }
+   .subscribe-tenders__value-link{
+       margin-top: 0px;
+   }
+   .header-image{
+       margin-bottom: 40px;
+   }
+   .acor-container{
+       margin-bottom: 30px;
+   }
+   .open-tender{
+       margin-bottom: 40px;
+   }
+   .header-image, .header-image>.content{
+       min-height: 35vh;
+       height: 60vh;
+   }
+   .awards-post{
+       flex-direction: column;
+       text-align: center;
+   }
+   .poster-awards__item>span{
+       margin: 0;
+       margin-top: 10px;
+       font-size: 8px;
    }
 }
 
@@ -3921,6 +4106,12 @@ h3.banner-item__title {
     }
     .connection__item{
         width: 100%;
+    }
+    .acor-container input:checked + label + .acor-body{
+        padding: 25px 15px 10px;
+    }
+    .table-grid p{
+        font-size: 9px;
     }
 }
 

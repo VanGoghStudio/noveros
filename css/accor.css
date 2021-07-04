@@ -1,5 +1,5 @@
 .acor-container {
-    margin: 20px 0;
+    margin: 20px 0 70px;
 }
 .acor-container .acor-body {
     margin: 0 auto;
@@ -27,6 +27,7 @@
     margin-right: 80px;
     max-width: 240px;
     max-height: 70px;
+    width: 100%;
 }
 .acor-body .check-list__item{
     font-size: 12px;
@@ -96,6 +97,7 @@
     background-color: #464646;
     color: #FFF;
 }
+
 .acor-container input:checked + label:before {
     transition: .35s;
     transform: translateX(calc(-100% + -21px)) translateY(-50%) rotateZ(45deg);
@@ -104,7 +106,7 @@
 .acor-container input:checked + label + .acor-body {
     height: auto;
     margin-top: -5px;
-    padding: 35px 20px 10px;
+    padding: 35px 40px 10px;
 }
 .acor-title{
     margin-right: 25%;
@@ -114,6 +116,9 @@
 }
 .acor-container input:checked + label > .acor-title {
     color: #ffffff !important;
+}
+.acor-container input:checked + label > .acor-title::before {
+    content: url('/image/calendar.svg');
 }
 
 /* MOBILE CONTAINER */
