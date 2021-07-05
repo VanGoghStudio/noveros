@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
         closeSearchBtn = document.querySelector('.close-search-btn'), 
         openSearchBtn = document.querySelector('.open-search-btn');
 
+
     // map
     if (openMenuBtn && menuModal) {
         let idOpen = openMenuBtn.addEventListener('click', () => {
@@ -144,6 +145,15 @@ document.addEventListener('DOMContentLoaded', function () {
         hambModal.classList.add('hide');
         hambModal.classList.remove('showFlex');
         openHambBtn.removeEventListener('click', openMobId);
+    });
+
+    // scroll
+    $("a.scroll-to").on("click", function(e){
+        e.preventDefault();
+        var anchor = $(this).attr('href');
+        $('html, body').stop().animate({
+            scrollTop: $(anchor).offset().top - 60
+        }, 800);
     });
 
 })

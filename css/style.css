@@ -1078,7 +1078,7 @@ a {
     justify-content: space-between;
     align-items: flex-start;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     width: 100%;
 }
 
@@ -1088,7 +1088,7 @@ a {
     justify-content: flex-start;
     align-items: flex-start;
     text-transform: uppercase;
-    flex-basis: 20%;
+    flex-basis: 21%;
     padding: 0;
     font-weight: 700;
 }
@@ -1113,6 +1113,23 @@ a {
     text-decoration: none;
     outline: none;
     color: #FFFFFF;
+}
+.footer-subtitle__legal-data{
+    margin-right: 65px;
+}
+.footer-subtitle__legal-data:last-child{
+    margin-right: 0px;
+}
+.link-mail{
+    text-transform: none;
+    font-size: 15px !important;
+}
+.address-text{
+    font-size: 14px !important;
+    line-height: 22px !important;
+}
+.column-footer__item {
+    padding-left: 0px;
 }
 
 .column-footer__item_heading>a {
@@ -3074,6 +3091,44 @@ h3.banner-item__title {
     .idea-form__submit-form .active{
         margin-right: 0px;
     }
+    .footer-link{
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .footer-link__item{
+        flex-basis: 30%;
+    }
+    .footer-link__item:nth-child(1){
+        flex-grow: 1;
+    }
+    .footer-link__item:nth-child(4),.footer-subtitle{
+        margin-top: 75px;
+    }
+    .gray-footer-text{
+        font-size: 12px !important;
+        line-height: 19px !important;
+    }
+    .footer-subtitle{
+        width: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-left: 35%;
+        height: 400px;
+    }
+    .footer-subtitle__item{
+        display: grid;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-subtitle__legal-data{
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    .footer-subtitle__legal-data:last-child{
+        margin-bottom: 0px;
+    }
 }
 
 @media screen and (max-width: 992.25px) {
@@ -3356,10 +3411,6 @@ h3.banner-item__title {
 
     .footer-wrap {
         padding: 20px 0;
-    }
-
-    .column-footer {
-        flex-basis: 40%;
     }
 
     .column-footer__item_heading {
@@ -3888,6 +3939,12 @@ h3.banner-item__title {
        margin-top: 10px;
        font-size: 8px;
    }
+   .footer-subtitle{
+       width: 100%;
+       flex-direction: row;
+       margin-left: 0px;
+       height: auto;
+   }
 }
 
 @media screen and (max-width: 480px) {
@@ -3923,11 +3980,6 @@ h3.banner-item__title {
 
     .number-about-us__indicator>.num-indicator__item {
         max-width: 46%;
-    }
-
-    .footer-bottom {
-        flex-wrap: wrap;
-        font-size: 9px;
     }
 
     .company-links__item_bold {
@@ -4113,12 +4165,39 @@ h3.banner-item__title {
     .table-grid p{
         font-size: 9px;
     }
+    .footer-subtitle{
+        flex-direction: column;
+    }
+    .footer-subtitle__item{
+        margin-bottom: 30px;
+    }
+    .footer-subtitle__item:last-child{
+        margin-bottom: 0px;
+    }
+    .footer-bottom {
+        position: relative;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        flex-direction: column-reverse;
+        font-size: 9px;
+    }
+    .footer-bottom__item.scroll-top{
+        position: absolute;
+        left: 80%;
+        top: 0%;
+    }
+    .column-footer{
+        flex-basis: 45%;
+        flex-grow: 1;
+    }
+    .footer-link__item:nth-child(4), .footer-subtitle{
+        margin-top: 20px;
+    }
 }
 
 
 @media screen and (max-width: 350px) {
     .awards__title:nth-child(1) {
         margin-right: 10px;
-    }
-   
+    }   
 }
