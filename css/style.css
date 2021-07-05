@@ -319,7 +319,7 @@ a {
 }
 .catalog-links__item_catalog{
     transition: .3s;
-    user-select: none;
+    user-select: nonegi;
 }
 .catalog-links__item_catalog.active{
     color: #FFFFFF;
