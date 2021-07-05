@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="css/accor.css">
     <link rel="stylesheet" href="css/catalog.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- SCRIPT ITEM -->
+    <script src="./scripts/value.js" defer></script>
 </head>
 
 <body>
@@ -260,7 +263,7 @@
                 <div class="hamb">
                     <div class="hamb__left">
                         <a target="_blank" href="index.html" class="hamb__links">
-                            <img class="hamb__logo" src="image/logo-dark.png" alt="logo-dark">
+                            <img class="hamb__logo" src="image/logo-dark.svg" alt="logo-dark">
                         </a>
                     </div>
                     <div class="hamb__right">
@@ -486,7 +489,7 @@
                         <h2 class="main-text__name">
                             ЦЕМ II/А-П 42,5Н СС (ССПЦ 500 Д-20) / Мешок 25 кг
                         </h2>
-                        <form action="#" class="submit-form">
+                        <form name='item' action="#" id='item' class="submit-form">
                             <div class="submit-form__content">
                                 <div class="submit-form__point">
                                     <div class="submit-form__criteria">
@@ -502,9 +505,9 @@
                                     </div>
                                     <div class="submit-form__value">
                                         <div class="form__count">
-                                            <button class="minus"></button>
-                                            <input class='equally' type="text" name="" id="" class="">
-                                            <button class="plus"></button>
+                                            <input type="button" name="minus" class="minus" disabled></input>
+                                            <input name="equally" class='equally' type="text" name="" id="" class="" value="1">
+                                            <input type="button" name="plus" class="plus"></input>
                                         </div>
                                     </div>
                                 </div>
@@ -931,7 +934,6 @@
             </div>
         </div>
     </footer>
-
     <!-- SCRIPT SLIDER -->
     <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
