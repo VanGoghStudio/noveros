@@ -36,7 +36,6 @@
     width: 100%;
     z-index: 5;
     transform: translateY(-100vh);
-    transition: .7s;
 }
 .map, .hamb{
     display: flex;
@@ -63,7 +62,6 @@
     left: 0;
     width: 100%;
     z-index: 9;
-    transition: .8s;
     height: 100vh;
 }
 

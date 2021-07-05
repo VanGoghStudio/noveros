@@ -319,7 +319,7 @@ a {
 }
 .catalog-links__item_catalog{
     transition: .3s;
-    user-select: nonegi;
+    user-select: none;
 }
 .catalog-links__item_catalog.active{
     color: #FFFFFF;
@@ -1113,6 +1113,13 @@ a {
 .news-slider__item:hover .news-post__title {
     color: #FFFFFF;
 }
+
+.ymaps-2-1-78-ground-pane{
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+}   
 
 /* FOOTER */
 
@@ -2816,12 +2823,14 @@ h3.banner-item__title {
     transform: translateY(0);
     z-index: 999;
     opacity: 1;
+    transition: .7s;
 }
 
 .hide {
     visibility: hidden;
     opacity: 0;
     transform: translateY(-100vh);
+    transition: .7s;
 }
 
 
@@ -2896,7 +2905,6 @@ h3.banner-item__title {
     position: absolute;
     top: 0;
     left: 0;
-    transition: .5s;
 }
 
 .search__title {
