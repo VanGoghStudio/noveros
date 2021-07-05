@@ -4260,6 +4260,9 @@ h3.banner-item__title {
     .footer-link__item:nth-child(4), .footer-subtitle{
         margin-top: 20px;
     }
+    .logo-company{
+        padding-right: 0px;
+    }
 }
 
 
