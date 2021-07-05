@@ -14,10 +14,27 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // search
 
-        searchWrap = document.querySelector('.search-wrap'), 
-        closeSearchBtn = document.querySelector('.close-search-btn'), 
-        openSearchBtn = document.querySelector('.open-search-btn');
+        searchWrap = document.querySelector('.search-wrap'),
+        closeSearchBtn = document.querySelector('.close-search-btn'),
+        openSearchBtn = document.querySelector('.open-search-btn'),
 
+        // catalog
+        catalogOpenLink = document.querySelector('.catalog-links__item_catalog'),
+        catalogOpenBtn = document.querySelector('.catalog-open-btn'),
+        catalogCloseBtn = document.querySelector('.catalog-close-btn'),
+        menuCatalog = document.querySelector('.hamb-catalog-menu');
+
+
+    // catalog
+    if(menuCatalog && catalogOpenLink){
+        let openId = catalogOpenLink.addEventListener('click', function(){
+            catalogOpenLink.classList.toggle('active');
+            menuCatalog.classList.toggle('showFlex'); 
+            menuCatalog.classList.toggle('hide'); 
+            catalogOpenBtn.classList.toggle('dis-hide');          
+            catalogCloseBtn.classList.toggle('dis-hide');
+        })
+    }
 
     // map
     if (openMenuBtn && menuModal) {
@@ -36,20 +53,44 @@ document.addEventListener('DOMContentLoaded', function () {
     if (hambCategory && hambLinks) {
         let arrCategory = [{
                 id: 'каталог',
-                subtitle: [['Весь каталог', 'catalog.html'], ['Мешки 50 КГ', 'catalog.html'], ['МЕШКИ 50 КГ НА ПАЛЕТАХ ПО 1500 КГ', 'catalog.html'], 
-                            ['НАВАЛ', 'catalog.html'], ['МЕШКИ 25 КГ', 'catalog.html'], ['МЕШКИ 25 КГ НА ПАЛЕТАХ ПО 1400 КГ', 'catalog.html'], ['МКР 1500 КГ', 'catalog.html']]
+                subtitle: [
+                    ['Весь каталог', 'catalog.html'],
+                    ['Мешки 50 КГ', 'catalog.html'],
+                    ['МЕШКИ 50 КГ НА ПАЛЕТАХ ПО 1500 КГ', 'catalog.html'],
+                    ['НАВАЛ', 'catalog.html'],
+                    ['МЕШКИ 25 КГ', 'catalog.html'],
+                    ['МЕШКИ 25 КГ НА ПАЛЕТАХ ПО 1400 КГ', 'catalog.html'],
+                    ['МКР 1500 КГ', 'catalog.html']
+                ]
             },
             {
                 id: 'компания',
-                subtitle: [['Вакансии', 'vacancy.html'], ['Тендеры', 'tenders.html'], ['О компании', 'text-bg.html'], ['Контакты', 'contact.html'], ['Новости', 'news.html'], ['Предложить идею по улучшению компании', 'idea.html']]
+                subtitle: [
+                    ['Вакансии', 'vacancy.html'],
+                    ['Тендеры', 'tenders.html'],
+                    ['О компании', 'text-bg.html'],
+                    ['Контакты', 'contact.html'],
+                    ['Новости', 'news.html'],
+                    ['Предложить идею по улучшению компании', 'idea.html']
+                ]
             },
             {
                 id: 'покупателю',
-                subtitle: [['Корзина', ''], ['Доставка и оплата', ''], ['Вход в личный кабинет', ''], ['О компании', 'text-bg.html'], ['Контакты', 'contact.html']]
+                subtitle: [
+                    ['Корзина', ''],
+                    ['Доставка и оплата', ''],
+                    ['Вход в личный кабинет', ''],
+                    ['О компании', 'text-bg.html'],
+                    ['Контакты', 'contact.html']
+                ]
             },
             {
                 id: 'пресс центр',
-                subtitle: [['пресс релизы', 'news.html'], ['Новости', 'news.html'], ['О компании', 'text-bg.html']]
+                subtitle: [
+                    ['пресс релизы', 'news.html'],
+                    ['Новости', 'news.html'],
+                    ['О компании', 'text-bg.html']
+                ]
             },
             {
                 id: 'контакты',
@@ -125,7 +166,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     }
     // search
-    if (searchWrap && closeSearchBtn){
+    if (searchWrap && closeSearchBtn) {
         let idOpen = openSearchBtn.addEventListener('click', (e) => {
             e.preventDefault();
             searchWrap.classList.remove('hide');
@@ -148,7 +189,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // scroll
-    $("a.scroll-to").on("click", function(e){
+    $("a.scroll-to").on("click", function (e) {
         e.preventDefault();
         var anchor = $(this).attr('href');
         $('html, body').stop().animate({

@@ -62,10 +62,25 @@
                 <a target="_blank" href="index.html" class="logo-company">
                     <img src="./image/logo.svg" alt="Логотип" class="catalog-links__item">
                 </a>
-                <a target="_blank" href="catalog.html" class="catalog-links__item catalog-links__item_catalog">
-                    Каталог
-                    <div class="line-open"></div>
-                </a>
+                <div class="catal">
+                    <a class="catalog-links__item catalog-links__item_catalog">
+                        Каталог
+                        <div class="basket-links__item catalog-open-hamb">
+                            <img src="image/catalog-open.svg" alt="basket" class="catalog-open-btn">
+                            <img src="image/close.svg" alt="Закрыть окно" class="catalog-close-btn dis-hide">
+                        </div>
+                    </a>
+                    <div class="hamb-catalog-menu hide">
+                        <a href="catalog.html" class="hamb-catalog-menu__link">Весь каталог</a>
+                        <a href="catalog.html" class="hamb-catalog-menu__link">Мешки 90 кг</a>
+                        <a href="catalog.html" class="hamb-catalog-menu__link">Мешки 50 кг на плалетах по 1500 кг</a>
+                        <a href="catalog.html" class="hamb-catalog-menu__link">навал</a>
+                        <a href="catalog.html" class="hamb-catalog-menu__link">мешки 25 кг</a>
+                        <a href="catalog.html" class="hamb-catalog-menu__link">Мешка 25 кг на палетах по 1400 кг</a>
+                        <a href="catalog.html" class="hamb-catalog-menu__link">мкр 1500 кг</a>
+                    </div>
+                </div>
+                
                 <a target="_blank" href="text-bg.html" class="catalog-links__item">
                     Доставка и оплата
                 </a>
@@ -293,27 +308,29 @@
                 </div>
                 <div class="contact">
                     <a target="_blank" href="tel:8(617)795292" class="contact__link">8 (8617) 79 52 92</a>
-                    <a target="_blank" href="mailto:secretary@novoroscement.ru" class="contact__link">secretary@novoroscement.ru</a>
+                    <a target="_blank" href="mailto:secretary@novoroscement.ru"
+                        class="contact__link">secretary@novoroscement.ru</a>
                 </div>
             </div>
 
             <div class="mobile-hamb">
-                    <nav class="company-links mobile-hamb__header">
-                        <a target="_blank" href="tel:8(617)795292" class="company-links__item company-links__item_phone company-links__item_bold">
-                            8(617) 79-52-92
-                        </a>
-                        <a target="_blank" href="#" class="company-links__item">
-                            <img class='people' src="./image/header/user.svg" alt="Личный кабинет">
-                            <span class="mobile-hamb__text  company-links__item_bold">
-                                Личный кабинет
-                            </span>
-                        </a>
-                        <button class="map__close close-hamb-mob-btn">
-                            <img src="image/close.svg" alt="close">
-                        </button>
-                    </nav>
+                <nav class="company-links mobile-hamb__header">
+                    <a target="_blank" href="tel:8(617)795292"
+                        class="company-links__item company-links__item_phone company-links__item_bold">
+                        8(617) 79-52-92
+                    </a>
+                    <a target="_blank" href="#" class="company-links__item">
+                        <img class='people' src="./image/header/user.svg" alt="Личный кабинет">
+                        <span class="mobile-hamb__text  company-links__item_bold">
+                            Личный кабинет
+                        </span>
+                    </a>
+                    <button class="map__close close-hamb-mob-btn">
+                        <img src="image/close.svg" alt="close">
+                    </button>
+                </nav>
                 <div class="mobile-hamb__accord acor-container-mobile">
-                    <input type="checkbox" name="chacor" id="chacor1"/>
+                    <input type="checkbox" name="chacor" id="chacor1" />
                     <label for="chacor1">Каталог</label>
                     <div class="acor-body">
                         <a target="_blank" href="#" class="acor-link active">Весь каталог</a>
@@ -321,7 +338,7 @@
                         <a target="_blank" href="#" class="acor-link">Мешки 50 кг на плалетах по 1500 кг</a>
                         <a target="_blank" href="#" class="acor-link">навал</a>
                         <a target="_blank" href="#" class="acor-link">мешки 25 кг</a>
-                        <a target="_blank" href="#" class="acor-link">Мешка 25 кг на палетах  по 1400 кг</a>
+                        <a target="_blank" href="#" class="acor-link">Мешка 25 кг на палетах по 1400 кг</a>
                         <a target="_blank" href="#" class="acor-link">мкр 1500 кг</a>
                     </div>
 
@@ -357,20 +374,20 @@
 
         <!-- SEARCH -->
         <section class="dark-wrap search-wrap hide">
-           <div class="content">
-               <div class="search">
-                <div class="search__title">
-                    <h2>Поиск на сайте</h2>
-                    <button class="map__close close-search-btn">
-                        <img src="image/close.svg" alt="close">
-                    </button>
+            <div class="content">
+                <div class="search">
+                    <div class="search__title">
+                        <h2>Поиск на сайте</h2>
+                        <button class="map__close close-search-btn">
+                            <img src="image/close.svg" alt="close">
+                        </button>
+                    </div>
+                    <div class="search__panel">
+                        <input class="search__input" type="text" placeholder="Введите запрос для поиска">
+                        <img class="search__icon" type="text" src="./image/header/loupe.png">
+                    </div>
                 </div>
-                <div class="search__panel">
-                    <input class="search__input" type="text" placeholder="Введите запрос для поиска">
-                    <img class="search__icon" type="text" src="./image/header/loupe.png">
-                </div>
-               </div>
-           </div>
+            </div>
         </section>
 
     </header>
@@ -439,8 +456,10 @@
                         <li>Вся продукция сертифицирована.</li>
                     </ul>
                     <div class="link-summary">
-                        <a target="_blank" class="link link_dark link-summary__item" href="./text-bg.html">Условия доставки</a>
-                        <a class="link link_dark link-summary__item link_dashed scroll-to" href="#advantage">Наши преимущества</a>
+                        <a target="_blank" class="link link_dark link-summary__item" href="./text-bg.html">Условия
+                            доставки</a>
+                        <a class="link link_dark link-summary__item link_dashed scroll-to" href="#advantage">Наши
+                            преимущества</a>
                     </div>
                 </div>
             </div>
