@@ -1,3 +1,12 @@
+header{
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    z-index: 999;
+    position: fixed;
+}
+
+
 .header{
     display: flex;
     justify-content: space-between;
@@ -152,6 +161,7 @@
     text-decoration: none;
     outline: none;
     margin-left: 30px;
+    transition: .3s;
 }
 
 .company-links__item_bold{
@@ -166,8 +176,8 @@
 
 .company-links__item > .people, .loupe {
     color: white;
-    width: 27px;
-    height: 27px; 
+    width: 24px;
+    height: 24px; 
 }
 
 /* HEADER SECTION SECOND */
@@ -187,14 +197,37 @@
     align-items: center;
     flex-wrap: wrap;
 }
+.basket-links__item_image{
+    position: relative;
+}
+.basket-links__count{
+    position: absolute;
+    top: -2px;
+    left: 70%;
+    width: 19px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 10px;
+    letter-spacing: 0.05em;
+    border-radius: 10px;
+    background-color: var(--pomegranate-color);
+    color: #FFFFFF;
+}
 
 .catalog-links__item{
     text-decoration: none;
     outline: none;
     color: #323232;
     cursor: pointer;
+    transition: .3s;
 }
-
+.catalog-links__item:hover, .company-links__item:hover{
+    color: var(--pomegranate-color);
+}
 
 
 .logo-company{

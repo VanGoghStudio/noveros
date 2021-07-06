@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         searchWrap = document.querySelector('.search-wrap'),
         closeSearchBtn = document.querySelector('.close-search-btn'),
-        openSearchBtn = document.querySelector('.open-search-btn'),
+        openSearchBtnArr = document.querySelectorAll('.open-search-btn'),
 
         // catalog
         catalogOpenLink = document.querySelector('.catalog-links__item_catalog'),
@@ -27,13 +27,26 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // catalog
     if(menuCatalog && catalogOpenLink){
-        let openId = catalogOpenLink.addEventListener('click', function(){
-            catalogOpenLink.classList.toggle('active');
-            menuCatalog.classList.toggle('showFlex'); 
-            menuCatalog.classList.toggle('hide'); 
-            catalogOpenBtn.classList.toggle('dis-hide');          
-            catalogCloseBtn.classList.toggle('dis-hide');
+        let openId = catalogOpenBtn.addEventListener('click', (e) => {
+            catalogOpenLink.classList.add('active');
+            menuCatalog.classList.add('showFlex'); 
+            menuCatalog.classList.remove('hide'); 
+            catalogOpenBtn.classList.add('dis-hide');          
+            catalogCloseBtn.classList.remove('dis-hide');
+            e.stopPropagation();
+            document.addEventListener('click', (e) => {
+                const target = e.target;
+                if(target.classList.contains('catalog-close-btn') || !target.closest('.hamb-catalog-menu')){
+                    catalogOpenLink.classList.remove('active');
+                    menuCatalog.classList.remove('showFlex'); 
+                    menuCatalog.classList.add('hide'); 
+                    catalogOpenBtn.classList.remove('dis-hide');          
+                    catalogCloseBtn.classList.add('dis-hide');
+                }
+            })
+
         })
+        
     }
 
     // map
@@ -156,6 +169,7 @@ document.addEventListener('DOMContentLoaded', function () {
             e.preventDefault();
             hambModal.classList.remove('hide');
             hambModal.classList.add('showFlex');
+            e.stopPropagation();
             let closeId = closeHambBtn.addEventListener('click', () => {
                 hambModal.classList.add('hide');
                 hambModal.classList.remove('showFlex');
@@ -167,19 +181,21 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     // search
     if (searchWrap && closeSearchBtn) {
-        let idOpen = openSearchBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            searchWrap.classList.remove('hide');
-            searchWrap.classList.add('showFlex');
-            document.body.style.overflow = 'none';
-            let idClose = closeSearchBtn.addEventListener('click', (e) => {
+            openSearchBtnArr.forEach(item => {
+            item.addEventListener('click', (e) => {
                 e.preventDefault();
-                searchWrap.classList.add('hide');
-                searchWrap.classList.remove('showFlex');
-                openSearchBtn.removeEventListener('click', idOpen);
-                closeSearchBtn.removeEventListener('click', idClose);
+                searchWrap.classList.remove('hide');
+                searchWrap.classList.add('showFlex');
+                document.body.style.overflow = 'none';
+                e.stopPropagation();
+                closeSearchBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    searchWrap.classList.add('hide');
+                    searchWrap.classList.remove('showFlex');
+                })
             })
         })
+        
     }
 
     let openMobId = closeHambMobBtn.addEventListener('click', () => {
@@ -199,10 +215,81 @@ document.addEventListener('DOMContentLoaded', function () {
 
     $("a.scroll-top").on("click", function (e) {
         e.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: 1
+        }, 800);
+    });
+
+    $(window).scroll(function(){
+        if($(this).scrollTop()>0){
+            $('#header').addClass('fixed');
+        }
+        else if ($(this).scrollTop()<0){
+            $('#header').removeClass('fixed');
+        }
+    });
+
+    $("a.scroll-map").on("click", function (e) {
+        e.preventDefault();
         var anchor = $(this).attr('href');
         $('html, body').stop().animate({
             scrollTop: $(anchor).offset().top - 60
         }, 800);
     });
+
+    // CATALOG CARD
+
+    let cardCatalogArr = document.querySelectorAll('a.card-list__item');
+    if(cardCatalogArr.length){
+        let widthDevice = document.body.clientWidth;
+
+        const cardOne = document.querySelector('.no-item-banner_one-column'), 
+            cardTwo = document.querySelector('.no-item-banner_two-column'), 
+            cardThree = document.querySelector('.no-item-banner_three-column');
+
+        if(widthDevice > 1449){
+            switch (cardCatalogArr.length % 5){
+                case 1:
+                    cardThree.classList.remove('hide');
+                    cardOne.classList.remove('hide');
+                    break;
+                case 2:
+                    cardTwo.classList.remove('hide');
+                    cardOne.classList.remove('hide');
+                    break;
+                case 3: 
+                    cardTwo.classList.remove('hide');
+                    break;
+                default:
+                    break;
+            }
+        }else if((widthDevice > 1100 && widthDevice < 1450) || (widthDevice < 993 && widthDevice > 759)){
+            switch (cardCatalogArr.length % 4){
+                case 1:
+                    cardThree.classList.remove('hide');
+                    break;
+                case 2:
+                    cardTwo.classList.remove('hide');
+                    break;
+                case 3: 
+                    cardOne.classList.remove('hide');
+                    break;
+                default:
+                    break;
+            }
+        }else if(widthDevice < 1101 && widthDevice >= 993){
+            switch (cardCatalogArr.length % 3){
+                case 1:
+                    cardTwo.classList.remove('hide');
+                    break;
+                case 2:
+                    cardOne.classList.remove('hide');
+                    break;
+                default:
+                    break;
+            }
+        }
+        
+    }
 
 })

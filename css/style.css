@@ -22,8 +22,8 @@ ______________________________________________________________
 }
 @font-face {
     font-family: 'Montserrat';
-    src: url("../fonts/Montserrat-SemiBold.woff2"), 
-    url("../fonts/Montserrat-SemiBold.woff");
+    src: url("../fonts/Montserrat-Bold.woff2"), 
+    url("../fonts/Montserrat-Bold.woff");
     font-weight: 700;
     font-style: normal;
     font-display: swap; 
@@ -58,6 +58,7 @@ body {
     text-transform: none;
     color: #464646;
     overflow-x: hidden;
+    padding-top: 130px;
 }
 
 input {
@@ -84,7 +85,7 @@ a {
 }
 
 .content {
-    max-width: 1470px;
+    max-width: 1550px;
     width: 100%;
     margin: auto;
     padding: 0 50px;
@@ -179,6 +180,9 @@ a {
     background-color: #FFFFFF;
     color: #333333;
 }
+.hamb-wrap{
+    background-color: #303030 !important;
+}
 
 .btn-link {
     display: flex;
@@ -215,7 +219,7 @@ a {
 
 .main-wrap {
     box-sizing: border-box;
-    height: 730px;
+    /* height: 730px; */
     padding: 150px 0;
     background: url(../image/mainBg.png) center center no-repeat;
     background-size: cover;
@@ -335,6 +339,9 @@ a {
 .dis-hide{
     display: none;
 }
+.company-links__item_room{
+    margin-right: 25px;
+}
 
 /* SUMMARY BLOCK */
 
@@ -453,7 +460,7 @@ a {
 /* THIRD SECTION (CARD ABOUS US) */
 
 .third {
-    background-color: #E5E5E5;
+    background-color: #F3F3F2;
 }
 
 .advantages-block__number {
@@ -1905,6 +1912,7 @@ textarea {
 /* NUM-LIST */
 
 ol {
+    padding-left: 20px;
     margin-bottom: 150px;
 }
 
@@ -2406,7 +2414,7 @@ h3.banner-item__title {
 }
 
 .banner-contact__item {
-    max-width: 35vw;
+    max-width: 48%;
     min-height: 680px;
     display: flex;
     justify-content: flex-start;
@@ -2553,7 +2561,7 @@ h3.banner-item__title {
 .subscribe-tenders__item {
     flex-direction: column;
     justify-content: flex-start;
-    max-width: 600px;
+    max-width: 49%;
     min-height: 225px;
     padding: 30px;
     margin-right: 20px;
@@ -2905,6 +2913,7 @@ h3.banner-item__title {
     position: absolute;
     top: 0;
     left: 0;
+    transition: .3s;
 }
 
 .search__title {
@@ -2930,6 +2939,9 @@ h3.banner-item__title {
     display: none;
     width: 100%;
     max-width: 30px;
+}
+.breadcrumbs__item{
+    font-size: 13px;
 }
 
 /* **************MEDIA****************** */
@@ -3010,13 +3022,13 @@ h3.banner-item__title {
         min-height: auto;
     }
     .subscribe-tenders__item{
-        margin: 0px auto;
-        margin-bottom: 20px;
+        margin: 5px auto 10px;
+        /* margin-bottom: 20px; */
         max-width: 70%;
+        min-height: 270px
     }
     .subscribe-tenders__item:last-child{
-        margin: 0 auto;
-        margin-bottom: 0px;
+        margin: 5px auto 10px;
     }
     .idea-form__submit-form .submit-form__content{
         justify-content: stretch;
@@ -3041,6 +3053,10 @@ h3.banner-item__title {
         margin: 0;
         margin-bottom: 20px;
     }   
+    .subscribe-tenders__button{
+        height: 60px;
+        margin-top: 0px;
+    }
 }
 
 @media screen and (max-width: 1024.25px) {
@@ -3196,6 +3212,15 @@ h3.banner-item__title {
     .footer-subtitle__legal-data:last-child{
         margin-bottom: 0px;
     }
+    .subtitle{
+        padding-left: 0px;
+    }
+    .subtitle > li{
+        padding-left: 0px; 
+    }
+    .subtitle > li::marker{
+        font-size: 0px;
+    }
 }
 
 @media screen and (max-width: 992.25px) {
@@ -3343,7 +3368,7 @@ h3.banner-item__title {
     }
 
     .history__title {
-        padding-bottom: 40px;
+        padding-bottom: 0px;
     }
 
     .history__text .paragraph__link {
@@ -3605,11 +3630,32 @@ h3.banner-item__title {
     .submit-form{
         margin-bottom: 0px;
     }
+    .no-item-banner{
+        padding: 35px 30px;
+    }
+    .no-item-banner__title_normal{
+        font-size: 22px;
+        line-height: 25px;
+        margin-bottom: 15px;
+    }
+    .no-item-banner__paragraph{
+        font-size: 14px;
+    }
+    .no-item-banner__image{
+        bottom: 35px;
+    }
+    .summary-data{
+        transform: translateY(-60px);
+    }
+    .catalog > .title{
+        margin-bottom: 35px;
+    }
 }
 
 @media screen and (max-width: 759.25px) {
     .summary-data {
         flex-direction: column;
+        transform: translateY(-45px);
     }
 
     .summary-data__item {
@@ -3714,7 +3760,6 @@ h3.banner-item__title {
     .card-about-us__item {
         min-height: 270px;
         padding: 20px 15px;
-        margin-bottom: 20px;
     }
     .adv-company-wrap .card-about-us__item_short{
         flex-basis: 60%;
@@ -3727,7 +3772,7 @@ h3.banner-item__title {
         margin-bottom: 25px;
     }
     .advantages-block__photo_right{
-        top: 8%;
+        top: 13%;
     }
 
     .advantages-block__photo {
@@ -3752,9 +3797,6 @@ h3.banner-item__title {
         line-height: 9px;
     }
 
-    .summary-data {
-        transform: translateY(-40px);
-    }
 
     .summary-data__item {
         padding: 30px 15px;
@@ -4012,6 +4054,21 @@ h3.banner-item__title {
        margin-left: 0px;
        height: auto;
    }
+   .history{
+        padding: 40px 0 45px;
+    }
+    .certificates-slider, .awards-slider{
+        padding-bottom: 45px;
+    }
+    .banner__text-slogan{
+        margin-top: 0px;
+    }
+    .logo-basket{
+        height: 26px;
+    }
+    .connection__item_row>.banner-contact__type{
+        margin: 0 95px 0 0;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -4021,7 +4078,6 @@ h3.banner-item__title {
 
     .advantages-block__photo {
         max-width: 130px;
-        margin-left: 5px;
     }
 
     .people {
@@ -4030,7 +4086,6 @@ h3.banner-item__title {
 
     .card-about-us__item {
         min-height: 215px;
-        align-items: center;
     }
 
     .company-links__item:nth-child(3) {
@@ -4151,7 +4206,6 @@ h3.banner-item__title {
     .card-about-us__item .advantages-block__title {
         font-size: 13px;
         line-height: 18px;
-        margin-bottom: 15px;
     }
     .card-about-us {
         padding-bottom: 40px;
@@ -4262,6 +4316,36 @@ h3.banner-item__title {
     }
     .logo-company{
         padding-right: 0px;
+    }
+    .catalog > .title{
+        margin-bottom: 30px;
+    }
+    .figures-wrap{
+        padding: 40px 0;
+    }
+    .figures-wrap .title{
+        margin-bottom: 35px;
+    }
+    .idea-form{
+        flex-direction: column;
+    }
+    .idea-form__banner{
+        display: flex;
+        align-items: flex-start;
+        padding: 30px;
+        min-height: 500px;
+    }
+    .form-idea-post{
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-bottom: 30px;
+    }
+    .form-idea-post:last-child{
+        margin-bottom: 0px;
+    }
+    .form-idea-post .awards-post__text{
+        margin-left: 8px;
+        margin-top: 0px;
     }
 }
 
