@@ -27,24 +27,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // catalog
     if(menuCatalog && catalogOpenLink){
-        let openId = catalogOpenBtn.addEventListener('click', (e) => {
-            catalogOpenLink.classList.add('active');
-            menuCatalog.classList.add('showFlex'); 
-            menuCatalog.classList.remove('hide'); 
-            catalogOpenBtn.classList.add('dis-hide');          
-            catalogCloseBtn.classList.remove('dis-hide');
-            e.stopPropagation();
-            document.addEventListener('click', (e) => {
-                const target = e.target;
-                if(target.classList.contains('catalog-close-btn') || !target.closest('.hamb-catalog-menu')){
-                    catalogOpenLink.classList.remove('active');
-                    menuCatalog.classList.remove('showFlex'); 
-                    menuCatalog.classList.add('hide'); 
-                    catalogOpenBtn.classList.remove('dis-hide');          
-                    catalogCloseBtn.classList.add('dis-hide');
-                }
-            })
 
+        function openCloseCat(e){
+            const target = e.target;
+            if(target.closest('catalog-links__item_catalog') || !target.closest('.hamb-catalog-menu')){
+                catalogOpenLink.classList.toggle('active');
+                menuCatalog.classList.toggle('showFlex'); 
+                menuCatalog.classList.toggle('hide'); 
+                catalogOpenBtn.classList.toggle('dis-hide');          
+                catalogCloseBtn.classList.toggle('dis-hide');
+            }
+        }
+
+        catalogOpenLink.addEventListener('click', (e) => {
+            e.stopPropagation();
+            openCloseCat(e);
         })
         
     }
