@@ -212,7 +212,11 @@ a {
     color: #ffffff;
 }
 
-
+.hamb__link:hover,.hamb__links:hover, .acor-link:hover, .acor-container-mobile label:hover, .mobile-hamb__footer > a:hover, 
+.contact__link:hover, .hamb-links__item:hover, .column-footer__item>a:hover{
+    color: var(--pomegranate-color) !important;
+    transition: .3s;
+}
 
 
 /* FIRST SECTION */
@@ -1157,6 +1161,9 @@ a {
     max-width: 425px;
     padding: 0;
     font-weight: 700;
+}
+.column-footer:first-child{
+    flex-grow: 1;
 }
 
 .column-footer__item_heading {
@@ -2952,9 +2959,17 @@ h3.banner-item__title {
     font-size: 13px;
 }
 
+
 /* **************MEDIA****************** */
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1400.35px) {
+    .log{
+        position: absolute;
+        top: 15%;
+        left: 45%;
+        z-index: -10;
+        pointer-events: none;
+    }
     .map{
         margin-bottom: 0px;
     }
@@ -2980,11 +2995,6 @@ h3.banner-item__title {
         padding: 45px 35px 50px 35px;
         min-height: 440px;
     }
-
-    .card-about-us {
-        justify-content: flex-start;
-    }
-
     .summary-data__item>.title {
         font-size: 26px;
         line-height: 35px;
@@ -3052,13 +3062,11 @@ h3.banner-item__title {
         min-height: auto;
     }
     .subscribe-tenders__item{
-        margin: 5px auto 10px;
-        /* margin-bottom: 20px; */
-        max-width: 70%;
-        min-height: 270px
+        min-height: 270px;
+        margin: 10px;
     }
     .subscribe-tenders__item:last-child{
-        margin: 5px auto 10px;
+        margin: 10px;
     }
     .idea-form__submit-form .submit-form__content{
         justify-content: stretch;
@@ -3087,12 +3095,8 @@ h3.banner-item__title {
         height: 60px;
         margin-top: 0px;
     }
-    .logo-big{
-        position: absolute;
-        top: 15%;
-        left: 45%;
-        z-index: -10;
-        pointer-events: none;
+    .header-image>.content, .header-image{
+        height: 70vh;
     }
 }
 

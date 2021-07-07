@@ -177,14 +177,10 @@ header{
     margin-right: 15px;
 }
 
-.people  {
+.people, .loupe {
     color: white;
     width: 27px;
     height: 27px; 
-}
-.loupe {
-    width: 23px;
-    height: 23px;
 }
 
 /* HEADER SECTION SECOND */

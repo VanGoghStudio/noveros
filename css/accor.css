@@ -154,7 +154,7 @@
     margin: 0 0 10px;
 }
 .acor-container-mobile .acor-body a{
-    color: #FFF !important;
+    color: #FFF;
 }
 .acor-container-mobile label{
     cursor: pointer;
