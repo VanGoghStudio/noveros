@@ -2428,7 +2428,10 @@ h3.banner-item__title {
     justify-content: flex-start;
     flex-direction: column;
     padding: 40px 50px;
-    margin: 10px;
+    margin-right: 10px;
+}
+.banner-contact__item:last-child{
+    margin-right: 0px;
 }
 
 .banner-contact__item>h3 {
@@ -3273,6 +3276,8 @@ h3.banner-item__title {
     }
     .banner-contact__item{
         flex-basis: 80%;
+        margin-right: 0px;
+        margin-bottom: 20px;
     }
 }
 
