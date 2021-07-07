@@ -1140,7 +1140,7 @@ a {
 
 .footer-link {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
@@ -1154,6 +1154,7 @@ a {
     align-items: flex-start;
     text-transform: uppercase;
     flex-basis: 21%;
+    max-width: 425px;
     padding: 0;
     font-weight: 700;
 }
@@ -2905,6 +2906,13 @@ h3.banner-item__title {
 .mobile-hamb__footer>a:last-child {
     margin-bottom: 0px;
 }
+.mobile-hamb__left, .mobile-hamb__right{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
 
 .search-wrap {
     background: #303030;
@@ -2947,6 +2955,20 @@ h3.banner-item__title {
 /* **************MEDIA****************** */
 
 @media screen and (max-width: 1400px) {
+    .hamb-wrap .column-footer:first-child{
+        max-width: 270px;
+    }
+    .hamb-wrap .column-footer:nth-child(2){
+        max-height: 310px;
+        flex-wrap: wrap;
+    }
+    .hamb-wrap .hamb-links >.column-footer__item{
+        max-width: 315px;
+        width: 100%;
+    }
+    .hamb-wrap .hamb-links >.column-footer__item.column-footer__item_link:nth-child(5n){
+        margin-bottom: 0px;
+    }
     .summary-data__item {
         padding: 45px 35px 50px 35px;
         min-height: 440px;
@@ -3017,7 +3039,8 @@ h3.banner-item__title {
     }
     .banner-contact__item{
         max-width: none;
-        min-width: 80%;
+        flex-basis: 40%;
+        min-width: 100px;
         flex-grow: 1;
         min-height: auto;
     }
@@ -3056,6 +3079,13 @@ h3.banner-item__title {
     .subscribe-tenders__button{
         height: 60px;
         margin-top: 0px;
+    }
+    .logo-big{
+        position: absolute;
+        top: 15%;
+        left: 45%;
+        z-index: -10;
+        pointer-events: none;
     }
 }
 
@@ -3097,7 +3127,6 @@ h3.banner-item__title {
         display: flex;
         flex-direction: column;
     }
-
     .desktop-hamb {
         display: none;
     }
@@ -3183,6 +3212,16 @@ h3.banner-item__title {
     }
     .footer-link__item:nth-child(1){
         flex-grow: 1;
+        flex-basis: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 70px;
+    }
+    .footer-link__item:nth-child(4){
+        margin-top: 80px;
+    }
+    .footer-link__item:nth-child(1) > .column-footer__item_heading{
+        grid-column: span 2;
     }
     .footer-link__item:nth-child(4),.footer-subtitle{
         margin-top: 75px;
@@ -3220,6 +3259,9 @@ h3.banner-item__title {
     }
     .subtitle > li::marker{
         font-size: 0px;
+    }
+    .banner-contact__item{
+        flex-basis: 80%;
     }
 }
 
@@ -3499,6 +3541,7 @@ h3.banner-item__title {
 
     img.footer-bottom__item {
         max-width: 155px;
+        margin-bottom: 10px;
     }
 
     .footer-wrap {
@@ -3653,6 +3696,20 @@ h3.banner-item__title {
 }
 
 @media screen and (max-width: 759.25px) {
+    .mobile-open-search{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .mobile-hamb .people{
+        width: 25px;
+        height: 25px;
+        margin-right: 25px;
+    }
+    .mobile-hamb .loupe{
+        width: 23px;
+        height: 23px;
+        margin-right: 25px;
+    }
     .summary-data {
         flex-direction: column;
         transform: translateY(-45px);
@@ -3838,11 +3895,6 @@ h3.banner-item__title {
     .footer-bottom__item:nth-child(2) {
         margin-right: 14%;
     }
-
-    .company-links__item_phone {
-        display: none;
-    }
-
     .search__title {
         align-items: baseline;
     }
@@ -4069,6 +4121,11 @@ h3.banner-item__title {
     .connection__item_row>.banner-contact__type{
         margin: 0 95px 0 0;
     }
+    .column-footer__item_link.red-box{
+        display: inline-block;
+        font-size: 9px;
+        line-height: 14px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -4103,7 +4160,9 @@ h3.banner-item__title {
     .number-about-us__indicator>.num-indicator__item {
         max-width: 46%;
     }
-
+    .mobile-hamb .company-links__item_bold{
+        font-size: 16px;
+    }
     .company-links__item_bold {
         font-size: 14px;
         margin: auto 5px;

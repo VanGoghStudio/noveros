@@ -158,7 +158,7 @@
 }
 .acor-container-mobile label{
     cursor: pointer;
-    background-color: #303030;
+    background-color: transparent;
     display: block;
     padding: 15px 20px;
     width: 100%;

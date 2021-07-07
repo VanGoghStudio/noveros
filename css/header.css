@@ -77,7 +77,10 @@ header{
 
 .hamb{
     align-items: flex-start;
-    margin-bottom: 150px;
+    margin-bottom: 15vh;
+}
+.hamb-wrap .footer-link{
+    margin-bottom: 20vh;
 }
 
 .hamb__links{
@@ -174,10 +177,14 @@ header{
     margin-right: 15px;
 }
 
-.company-links__item > .people, .loupe {
+.people  {
     color: white;
-    width: 24px;
-    height: 24px; 
+    width: 27px;
+    height: 27px; 
+}
+.loupe {
+    width: 23px;
+    height: 23px;
 }
 
 /* HEADER SECTION SECOND */
