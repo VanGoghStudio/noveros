@@ -486,7 +486,7 @@ a {
 
 .card-about-us {
     display: flex;
-    justify-content: center;
+    justify-content: stretch;
     align-items: flex-start;
     flex-wrap: wrap;
     position: relative;
@@ -2423,7 +2423,7 @@ h3.banner-item__title {
 
 .banner-contact__item {
     max-width: 48%;
-    min-height: 680px;
+    /* min-height: 680px; */
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
