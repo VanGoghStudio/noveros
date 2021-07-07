@@ -2955,6 +2955,13 @@ h3.banner-item__title {
 /* **************MEDIA****************** */
 
 @media screen and (max-width: 1400px) {
+    .map{
+        margin-bottom: 0px;
+    }
+    .map-wrap{
+        max-height: 100vh;
+        padding-top: 30px;
+    }
     .hamb-wrap .column-footer:first-child{
         max-width: 270px;
     }
