@@ -3158,6 +3158,9 @@ h3.banner-item__title {
 }
 
 @media screen and (max-width: 1024.25px) {
+    .no-item-banner{
+        display: none;
+    }
     .king-number__king-photo {
         max-width: 240px;
     }
