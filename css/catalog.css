@@ -22,7 +22,7 @@
 
 .filter__item{
     margin: 2px;
-    padding: 20px 15px;
+    padding: 19px 14px;
     border: 2px solid #EDECE8;
     background-color: transparent;
     color: #464646;
@@ -33,7 +33,11 @@
     text-transform: uppercase;
     transition: .3s;
     cursor: pointer;
-    flex-grow: .2;
+    /* flex-grow: .2; */
+    margin-right: 20px;
+}
+.filter__item:last-child{
+    margin-right: 0px;
 }
 
 .filter__item_active, .filter__item:hover{

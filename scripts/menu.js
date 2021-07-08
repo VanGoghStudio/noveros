@@ -26,15 +26,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     // catalog
-    if(menuCatalog && catalogOpenLink){
+    if (menuCatalog && catalogOpenLink) {
 
-        function openCloseCat(e){
+        function openCloseCat(e) {
             const target = e.target;
-            if(target.closest('catalog-links__item_catalog') || !target.closest('.hamb-catalog-menu')){
+            if (target.closest('catalog-links__item_catalog') || !target.closest('.hamb-catalog-menu')) {
                 catalogOpenLink.classList.toggle('active');
-                menuCatalog.classList.toggle('showFlex'); 
-                menuCatalog.classList.toggle('hide'); 
-                catalogOpenBtn.classList.toggle('dis-hide');          
+                menuCatalog.classList.toggle('showFlex');
+                menuCatalog.classList.toggle('hide');
+                catalogOpenBtn.classList.toggle('dis-hide');
                 catalogCloseBtn.classList.toggle('dis-hide');
             }
         }
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
             e.stopPropagation();
             openCloseCat(e);
         })
-        
+
     }
 
     // map
@@ -178,7 +178,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     // search
     if (searchWrap && closeSearchBtn) {
-            openSearchBtnArr.forEach(item => {
+        openSearchBtnArr.forEach(item => {
             item.addEventListener('click', (e) => {
                 e.preventDefault();
                 searchWrap.classList.remove('hide');
@@ -192,7 +192,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 })
             })
         })
-        
+
     }
 
     let openMobId = closeHambMobBtn.addEventListener('click', () => {
@@ -217,12 +217,13 @@ document.addEventListener('DOMContentLoaded', function () {
         }, 800);
     });
 
-    $(window).scroll(function(){
-        if($(this).scrollTop()>0){
-            $('#header').addClass('fixed');
-        }
-        else if ($(this).scrollTop()<0){
-            $('#header').removeClass('fixed');
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 50) {
+            $('#header_white').addClass('fixed');
+            $('body').addClass('body_fixed');
+        } else if ($(this).scrollTop() < 50) {
+            $('#header_white').removeClass('fixed');
+            $('body').removeClass('body_fixed');
         }
     });
 
@@ -236,57 +237,76 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // CATALOG CARD
 
-    let cardCatalogArr = document.querySelectorAll('a.card-list__item');
-    if(cardCatalogArr.length){
+    function countCards(arr) {
         let widthDevice = document.body.clientWidth;
-
-        const cardOne = document.querySelector('.no-item-banner_one-column'), 
-            cardTwo = document.querySelector('.no-item-banner_two-column'), 
-            cardThree = document.querySelector('.no-item-banner_three-column');
-
-        if(widthDevice > 1449){
-            switch (cardCatalogArr.length % 5){
-                case 1:
-                    cardThree.classList.remove('hide');
-                    cardOne.classList.remove('hide');
-                    break;
-                case 2:
-                    cardTwo.classList.remove('hide');
-                    cardOne.classList.remove('hide');
-                    break;
-                case 3: 
-                    cardTwo.classList.remove('hide');
-                    break;
-                default:
-                    break;
+        if (widthDevice > 1449) {
+            return {
+                count: Array.from(arr).length % 5,
+                width: widthDevice
             }
-        }else if((widthDevice > 1100 && widthDevice < 1450) || (widthDevice < 993 && widthDevice > 759)){
-            switch (cardCatalogArr.length % 4){
-                case 1:
-                    cardThree.classList.remove('hide');
-                    break;
-                case 2:
-                    cardTwo.classList.remove('hide');
-                    break;
-                case 3: 
-                    cardOne.classList.remove('hide');
-                    break;
-                default:
-                    break;
+        } else if ((widthDevice > 1100 && widthDevice < 1450) || (widthDevice < 993 && widthDevice > 759)) {
+            return {
+                count: Array.from(arr).length % 4,
+                width: widthDevice
             }
-        }else if(widthDevice < 1101 && widthDevice >= 993){
-            switch (cardCatalogArr.length % 3){
-                case 1:
-                    cardTwo.classList.remove('hide');
-                    break;
-                case 2:
-                    cardOne.classList.remove('hide');
-                    break;
-                default:
-                    break;
+        } else if (widthDevice < 1101 && widthDevice >= 993) {
+            return {
+                count: Array.from(arr).length % 3,
+                width: widthDevice
             }
         }
-        
+        return 0
     }
+
+    function paintCard({count, width}) {
+        const cardOne = document.querySelector('.no-item-banner_one-column'),
+            cardTwo = document.querySelector('.no-item-banner_two-column'),
+            cardThree = document.querySelector('.no-item-banner_three-column');
+            if (width > 1449) {
+                switch (count) {
+                    case 1:
+                        cardThree.classList.remove('hide');
+                        cardOne.classList.remove('hide');
+                        break;
+                    case 2:
+                        cardTwo.classList.remove('hide');
+                        cardOne.classList.remove('hide');
+                        break;
+                    case 3:
+                        cardTwo.classList.remove('hide');
+                        break;
+                    default:
+                        break;
+                }
+            } else if ((width > 1100 && width < 1450) || (width < 993 && width > 759)) {
+                switch (count) {
+                    case 1:
+                        cardThree.classList.remove('hide');
+                        break;
+                    case 2:
+                        cardTwo.classList.remove('hide');
+                        break;
+                    case 3:
+                        cardOne.classList.remove('hide');
+                        break;
+                    default:
+                        break;
+                }
+            } else if (width < 1101 && width >= 993) {
+                switch (count) {
+                    case 1:
+                        cardTwo.classList.remove('hide');
+                        break;
+                    case 2:
+                        cardOne.classList.remove('hide');
+                        break;
+                    default:
+                        break;
+                }
+            }
+    }
+
+    let firstCount = countCards(document.querySelectorAll('a.card-list__item'));
+    paintCard(firstCount);
 
 })
