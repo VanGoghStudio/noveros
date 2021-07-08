@@ -9,8 +9,16 @@
 
     <!-- MAP -->
 
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=28481b6a-dee0-4b10-a066-bd86bc386ae0&lang=ru_RU"
+    <script defer src="https://api-maps.yandex.ru/2.1/?apikey=28481b6a-dee0-4b10-a066-bd86bc386ae0&lang=ru_RU"
         type="text/javascript"></script>
+
+        <!-- WOW -->
+    <script src="scripts/wow.min.js"></script>
+    <script>new WOW().init();</script>
+
+    <!-- ANIMATE -->
+
+    <linK rel="stylesheet" href="./css/animate.css"/>
 
     <!-- SLIDER -->
 
@@ -21,6 +29,7 @@
     <link rel="stylesheet" href="css/accor.css">
     <link rel="stylesheet" href="css/catalog.css">
     <link rel="stylesheet" href="css/style.css">
+
 
 </head>
 
@@ -402,13 +411,13 @@
         <div class="content">
 
             <div class="main">
-                <h1 class="main__title">
+                <h1 class="main__title wow fadeInDown">
                     Цемент <br /> от производителя
                 </h1>
-                <div class="main__subtitle">
+                <div class="main__subtitle wow fadeInDown delay-1s">
                     С доставкой по южному федеральному округу
                 </div>
-                <button class="button-order">
+                <button class="button-order wow fadeInDown delay-1s">
                     <span class="button-order__text">
                         Заказать цемент
                     </span>
@@ -426,7 +435,7 @@
         <div class="content">
             <div class="summary-data">
                 <div class="summary-data__item summary-data__item_dark">
-                    <h2 class="title text_white">
+                    <h2 class="title text_white ">
                         Новоросцемент — надёжная опора для любого строительства
                     </h2>
                     <div class="num-indicator">
@@ -475,10 +484,10 @@
     <section class="catalog-wrap">
         <div class="content">
             <div class="catalog">
-                <h2 class="title title_black">
+                <h2 class="title title_black wow fadeInDown">
                     Каталог продукции
                 </h2>
-                <div class="catalog__sort filter">
+                <div class="catalog__sort filter wow fadeInDown">
                     <button class="filter__item filter__item_active">
                         Популярное
                     </button>
@@ -501,7 +510,7 @@
                         мкр 1500 кг
                     </button>
                 </div>
-                <div class="catalog__list card-list">
+                <div class="catalog__list card-list wow fadeInDown delay-1s">
 
                   
                     <a href='#' class="card-list__item product">
@@ -696,11 +705,11 @@
     <section class="figures-wrap third" id="advantage">
         <div class="content">
 
-            <h2 class="title">Преимущества работы с нами</h2>
+            <h2 class="title wow fadeInDown">Преимущества работы с нами</h2>
 
             <div class="card-about-us">
 
-                <div class="card-about-us__item card-about-us__item_long card-about-us__item_brown advantages-block">
+                <div class="card-about-us__item card-about-us__item_long card-about-us__item_brown advantages-block wow fadeInDown">
                     <div class="advantages-block__text">
                         <p class="advantages-block__number">01</p>
                         <div class="advantages-block__title">
@@ -714,7 +723,7 @@
                         alt="Advantages Company">
                 </div>
 
-                <div class="card-about-us__item card-about-us__item_short card-about-us__item_white advantages-block">
+                <div class="card-about-us__item card-about-us__item_short card-about-us__item_white advantages-block wow fadeInDown">
                     <div class="advantages-block__text">
                         <p class="advantages-block__number">02</p>
                         <div class="advantages-block__title">
@@ -727,7 +736,7 @@
                     </div>
                 </div>
 
-                <div class="card-about-us__item card-about-us__item_short card-about-us__item_red advantages-block">
+                <div class="card-about-us__item card-about-us__item_short card-about-us__item_red advantages-block wow fadeInDown">
                     <div class="advantages-block__text">
                         <p class="advantages-block__number">03</p>
                         <div class="advantages-block__title">
@@ -739,7 +748,7 @@
                     </div>
                 </div>
 
-                <div class="card-about-us__item card-about-us__item_long card-about-us__item_white advantages-block">
+                <div class="card-about-us__item card-about-us__item_long card-about-us__item_white advantages-block wow fadeInDown">
                     <div class="advantages-block__text">
                         <p class="advantages-block__number red-text">НАМ ДОВЕРЯЮТ!</p>
                         <div class="advantages-block__title">
@@ -750,7 +759,7 @@
                         alt="Advantages Company">
                 </div>
 
-                <div class="card-about-us__item card-about-us__item_long card-about-us__item_courier card-about-us__item_black advantages-block">
+                <div class="card-about-us__item card-about-us__item_long card-about-us__item_courier card-about-us__item_black advantages-block wow fadeInDown">
                     <div class="advantages-block__text">
                         <p class="advantages-block__number">04</p>
                         <div class="advantages-block__title">
@@ -765,12 +774,12 @@
 
             </div>
             <div class="number-about-us">
-                <h2 class="number-about-us__title title title_black">
+                <h2 class="number-about-us__title title title_black wow fadeInDown">
                     Цифры о нас
                 </h2>
 
 
-                <div class="paragraph paragraph_narrow">
+                <div class="paragraph paragraph_narrow wow fadeInDown">
                     <p class="paragraph__text">
                         ОАО «Новоросцемент» – лауреат учрежденного Советом Федерации конкурса «100 лучших организаций
                         России. Экология и экологический менеджмент». За обеспечение экологической безопасности
@@ -782,8 +791,8 @@
                     </p>
                 </div>
 
-                <a target="_blank" href="#" class="link link_dark">Подробнее о компании</a>
-                <div class="number-about-us__indicator num-indicator">
+                <a target="_blank" href="#" class="link link_dark wow fadeInDown">Подробнее о компании</a>
+                <div class="number-about-us__indicator num-indicator wow fadeInDown">
                     <div class="num-indicator__item">
                         <p class="number">
                             8%
@@ -838,11 +847,11 @@
     <section class="dark-wrap">
         <div class="content">
             <div class="history">
-                <h2 class="history__title title title_white">
+                <h2 class="history__title title title_white wow fadeInDown">
                     История предприятия
                 </h2>
                 <div class="history__content">
-                    <div class="history__text paragraph">
+                    <div class="history__text paragraph wow fadeInDown">
                         <p class="paragraph__item">
                             Первый цементный завод в районе Новороссийска (ныне завод «Пролетарий»)
                             был построен по указу государя императора Александра III в 1882 году.
@@ -881,7 +890,7 @@
     <section class="gray-wrap awards-wrapper">
         <div class="content">
             <div class="awards">
-                <div class="awards__headers">
+                <div class="awards__headers wow fadeInDown">
                     <h2 class="awards__title awards__title-certificates title title_black">
                         Сертификаты
                     </h2>
@@ -889,7 +898,7 @@
                         Награды
                     </h2>
                 </div>
-                <div class="certificates-slider">
+                <div class="certificates-slider wow fadeInDown">
                     <div class="certificates-slider__item">
                         <img src="./image/awards/1.png" alt="certificate" class="certificates-slider__image">
                         <div class="certificates-slider__plus-btn">+</div>
@@ -979,12 +988,12 @@
         </div>
         <!-- BANNER -->
         <div class="content dark-wrap banner">
-            <div class="banner__text-wrap">
+            <div class="banner__text-wrap wow fadeInDown">
                 <h2 class="banner__text-slogan">Заказывая цемент у производителя, вы защищаете себя от подделок и
                     гарантировано получаете товар высокого качества!</h2>
                 <a target="_blank" href="" class="btn-link btn-link_dark banner__link">Выбрать продукцию</a>
             </div>
-            <div class="banner-image__wrap">
+            <div class="banner-image__wrap wow fadeInDown">
                 <img class="banner__image" src="./image/banner.png" alt="banner">
             </div>
         </div>
@@ -996,11 +1005,11 @@
     <section class="news-wrapper white-wrap">
         <div class="content">
             <div class="news">
-                <h2 class="news__title title title_black">
+                <h2 class="news__title title title_black wow fadeInDown">
                     Последние пресс-релизы
                 </h2>
 
-                <div class="news__content news-slider">
+                <div class="news__content news-slider wow fadeInDown">
                     <a target="_blank" class="news-slider__item news-post">
                         <img src="./image/news/1.png" alt="image-photo" class="news-post__photo">
                         <div class="news-post__text-wrap">

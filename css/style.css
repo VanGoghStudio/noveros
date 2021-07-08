@@ -365,6 +365,7 @@ a {
     justify-content: center;
     align-items: center;
     width: 100%;
+    transition: .3s;
     transform: translateY(-100px);
 }
 
