@@ -236,7 +236,7 @@ a {
     box-sizing: border-box;
     height: 730px;
     padding: 150px 0;
-    background: url(../image/mainBg.webp) center center no-repeat;
+    background: url(../image/mainBg.png) center center no-repeat;
     background-size: cover;
     line-height: normal;
     letter-spacing: 0em;
@@ -319,7 +319,7 @@ a {
     color: #FFFFFF;
     /* margin-right: -5px; */
     z-index: 10;
-    transition: .3s;
+    transition: .2s;
 }
 
 .button-order:hover::after{
@@ -2618,7 +2618,7 @@ h3.banner-item__title {
     padding: 0px;
 }
 .tenders-header {
-    background-image: url('../image/tender-bg.webp');
+    background-image: url('../image/tender-bg.png');
 }
 
 .tenders-header__paragraph_small {
@@ -2910,7 +2910,7 @@ h3.banner-item__title {
 
 
 .showFlex {
-    /* position: fixed !important; */
+    position: fixed !important;
     visibility: visible;
     transform: translateY(0);
     z-index: 999;
@@ -4232,6 +4232,12 @@ h3.banner-item__title {
         font-size: 9px;
         line-height: 14px;
     }
+    .banner-image__wrap{
+        margin: 0 auto;
+    }
+    .paragraph_narrow{
+        margin-bottom: 0px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -4522,6 +4528,15 @@ h3.banner-item__title {
         grid-template-columns: 1fr 1fr;
         margin-bottom: 70px;
     }
+    .column-footer__item.column-footer__item_link.red-box{
+        padding: 15px 10px;
+        margin-left: 0px;
+    }
+    .column-footer__item.column-footer__item_link.red-box > a{
+        font-size: 9px;
+        line-height: 14px;
+    }
+    
 }
 
 

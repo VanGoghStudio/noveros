@@ -6,7 +6,6 @@ function init() {
         zoom: 16,
         controls: ['zoomControl', 'fullscreenControl']
     });
-
     myMap.behaviors.disable([
         'scrollZoom'
     ])

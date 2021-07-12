@@ -42,8 +42,9 @@ header{
     top: 0%;
     left: 0%;
     width: 100%;
-    z-index: 5;
     transform: translateY(-100vh);
+    z-index: 999;
+    transition: .7s;
 }
 .map, .hamb{
     display: flex;
@@ -69,9 +70,10 @@ header{
     top: 0%;
     left: 0;
     width: 100%;
-    z-index: 9;
     height: auto;
     min-height: 100vh;
+    z-index: 999;
+    transition: .7s;
 }
 
 .hamb{

@@ -51,9 +51,11 @@ document.addEventListener('DOMContentLoaded', function () {
         let idOpen = openMenuBtn.addEventListener('click', () => {
             menuModal.classList.remove('hide');
             menuModal.classList.add('showFlex');
+            document.body.style.overflowY = 'hidden';
             let idClose = closeMenuBtn.addEventListener('click', () => {
                 menuModal.classList.add('hide');
                 menuModal.classList.remove('showFlex');
+                document.body.style.overflowY = 'scroll';
                 openMenuBtn.removeEventListener('click', idOpen);
                 closeMenuBtn.removeEventListener('click', idClose);
             })
@@ -183,10 +185,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 e.preventDefault();
                 searchWrap.classList.remove('hide');
                 searchWrap.classList.add('showFlex');
-                document.body.style.overflow = 'none';
+                document.body.style.overflowY = 'hidden';
                 e.stopPropagation();
                 closeSearchBtn.addEventListener('click', (e) => {
                     e.preventDefault();
+                    document.body.style.overflowY = 'scroll';
                     searchWrap.classList.add('hide');
                     searchWrap.classList.remove('showFlex');
                 })
@@ -309,4 +312,4 @@ document.addEventListener('DOMContentLoaded', function () {
     let firstCount = countCards(document.querySelectorAll('a.card-list__item'));
     paintCard(firstCount);
 
-})
+}, {passive: true})
