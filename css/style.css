@@ -47,6 +47,7 @@ ______________________________________________________________
     padding: 0;
 
 }
+
 .body_fixed{
     padding-top: 84px;
 }
@@ -269,6 +270,7 @@ a {
 }
 
 .button-order {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -281,6 +283,18 @@ a {
     border-radius: 0px;
     text-transform: uppercase;
     cursor: pointer;
+    overflow: hidden;
+    z-index: 0;
+}
+.button-order::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 79%;
+    width: 100%;
+    height: 100%;
+    transition: .4s;
+    background: var(--pomegranate-color);
 }
 
 .button-order__text {
@@ -288,6 +302,8 @@ a {
     color: #464646;
     font-weight: 700;
     margin: auto;
+    z-index: 10;
+    transition: .3s;
 }
 
 .button-order__some-btn {
@@ -301,8 +317,22 @@ a {
     font-size: 80px;
     font-weight: 100;
     color: #FFFFFF;
-    margin-right: -5px;
+    /* margin-right: -5px; */
+    z-index: 10;
+    transition: .3s;
 }
+
+.button-order:hover::after{
+    left: 0%;
+    transition: .3s;
+}
+.button-order:hover .button-order__text{
+    color: #FFFFFF;
+}
+.button-order:hover .button-order__some-btn{
+    transform: rotateZ(45deg);
+}
+
 
 /* CATALOG MENU */
 
@@ -3387,6 +3417,8 @@ h3.banner-item__title {
 
     .button-order__some-btn {
         font-size: 65px;
+        width: 50px;
+        height: 50px;
     }
 
     .summary-data__item {
@@ -4501,3 +4533,4 @@ h3.banner-item__title {
         min-height: 210px !important;
     }
 }
+
