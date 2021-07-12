@@ -434,11 +434,11 @@ a {
 .num-indicator__item {
     display: flex;
     flex-direction: column;
-    max-width: 240px;
+    max-width: 270px;
     /* min-height: 140px; */
     margin: 0;
     padding: 0;
-    margin-right: 80px;
+    margin-right: 100px;
     text-transform: lowercase;
 }
 .num-indicator__item:last-child{
@@ -481,7 +481,7 @@ a {
 }
 
 .summary-data__item_white>.subtitle {
-    margin-bottom: 70px;
+    margin-bottom: 75px;
     font-size: 15px;
     font-style: normal;
     font-weight: 500;
@@ -778,7 +778,8 @@ a {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    width: 40%;
+    max-width: 500px;
+    width: 100%;
     font-size: 15px;
     font-weight: 500;
     line-height: 24px;
@@ -815,6 +816,7 @@ a {
 
 .king-number {
     text-align: left;
+    margin-top: -30px;
 }
 
 .king-number__year {
@@ -1336,16 +1338,12 @@ a {
 .column-footer__item.column-footer__item_link.red-box{
     margin-left: -15px;
     line-height: 16px;  
-    font-size: 10px;
-    font-weight: 700;
-    line-height: 16px;
-    letter-spacing: 0.05em;
 }
 .column-footer__item.column-footer__item_link.red-box > a{
     font-size: 10px;
     font-weight: 700;
     line-height: 16px;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.1em;
 }
 
 .footer-bottom-wrap {
@@ -3083,7 +3081,8 @@ h3.banner-item__title {
     }
 
     .num-indicator__item {
-        max-width: 160px;
+        max-width: 270px;
+        margin-right: 80px;
     }
 
     .num-indicator__item>.number {
