@@ -227,6 +227,7 @@
     border: none;
 }
 .no-item-banner_one-column{
+    width: 360px;
     grid-column: span 1;
     padding: 45px 35px;
     background-color: #464646;
@@ -235,6 +236,9 @@
 .no-item-banner_two-column{
     grid-column: span 2;
     background-color: #F3F2ED;
+}
+.no-item-banner_two-column_with_one{
+    width: 514px;
 }
 .no-item-banner_three-column{
     grid-column: span 3;

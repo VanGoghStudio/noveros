@@ -81,7 +81,7 @@ header{
     margin-bottom: 15vh;
 }
 .hamb-wrap .footer-link{
-    margin-bottom: 20vh;
+    margin-bottom: 0;
 }
 
 .hamb__links{
@@ -128,12 +128,13 @@ header{
     display: block;
     max-width: 100%;
 }
-.contact{
-    display: flex;
-    justify-content: flex-start;
-}
+
 .hamb-links__item{
-    font-size: 14px !important;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+    cursor: pointer;
 }
 .contact__link{
     color: #ffffff;
@@ -142,6 +143,7 @@ header{
     font-weight: 700;
 }
 .contact__link:nth-child(1){
+    width: 270px;
     font-size: 20px;
     line-height: 20px;
     flex-grow: .27;
@@ -318,6 +320,40 @@ header{
 .logo-basket{
     height: 30px;
 }
+.hamb-links__item{
+    display: block;
+    width: 100%;
+}
+/* .sub-menu{
+    display: flex;
+    opacity: 0;
+    visi
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    top: 0%;
+    left: calc(0% + 270px);
+    min-width: 300px;
+    padding: 0;
+    transition: .3s;
+}
+.sub-menu__item{
+    padding: 0;
+}
+.sub-menu__link{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+.column-footer__item_link{
+    width: 100%;
+}
+.hamb-links__item:hover + .sub-menu{
+    opacity: 1;
+} */
 
 @media screen and (max-width: 1200.25px) {
     .catalog-links__item:nth-child(3), .catalog-links__item:nth-child(4){
@@ -328,9 +364,18 @@ header{
     .header{
         padding: 0 15px;
     }
-    .catalog-links__item:first-child {
+    .logo-company > .catalog-links__item{
         height: auto;
-        max-width: 300px;
+        max-width: 210px;
+    }
+    .catalog-links__item_catalog{
+        margin-left: 20px;
+        max-height: 42px;
+        max-width: 122px;
+        font-size: 10px;
+    }
+    .header_white{
+        min-height: 62px;
     }
     .text-map{
         font-size: 10px;   
@@ -342,7 +387,7 @@ header{
         font-size: 16px;
     }
     .company-links__item_bold{
-        font-size: 18px;
+        font-size: 16px;
         margin: auto 15px;
     }
 }

@@ -63,6 +63,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     // hamb
     if (hambCategory && hambLinks) {
+        // id: category; 
+        // subtitle: [ [name, link, classCSS] ]
         let arrCategory = [{
                 id: 'каталог',
                 subtitle: [
@@ -149,7 +151,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         parseTitleInHTML(arrCategory)
-
+        // красный цвет по нажатии на ссылку и разворачивание соотв. массива 
         hambCategory.addEventListener('click', (e) => {
             e.preventDefault();
             let target = e.target;
@@ -166,12 +168,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
         let openId = openHambBtn.addEventListener('click', (e) => {
             e.preventDefault();
+            let pageY = window.pageYOffset;
+            hambModal.style.transform = `translateY(${pageY}px)`;
+            hambModal.style.display = `fixed !important`;
             hambModal.classList.remove('hide');
-            hambModal.classList.add('showFlex');
+            document.body.style.overflowY = 'hidden'
             e.stopPropagation();
             let closeId = closeHambBtn.addEventListener('click', () => {
-                hambModal.classList.add('hide');
-                hambModal.classList.remove('showFlex');
+                hambModal.classList.add('hide');    
+                hambModal.style.transform = `translateY(-100vh)`;
+                document.body.style.overflowY = 'scroll'
                 openHambBtn.removeEventListener('click', openId);
                 closeHambBtn.removeEventListener('click', closeId);
             });
