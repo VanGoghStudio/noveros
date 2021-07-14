@@ -207,6 +207,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let openMobId = closeHambMobBtn.addEventListener('click', () => {
         hambModal.classList.add('hide');
         hambModal.classList.remove('showFlex');
+        document.body.style.overflowY = 'scroll';
         openHambBtn.removeEventListener('click', openMobId);
     });
 
