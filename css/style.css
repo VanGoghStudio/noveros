@@ -648,7 +648,8 @@ a {
 }
 
 .advantages-block__photo_medal{
-    left: 91%;
+    position: absolute;
+    right: 10%;
     top: -6%;
 }
 
@@ -742,7 +743,7 @@ a {
     max-width: 1096px;
     width: 50vw;
     height: auto;
-    top: 40%;
+    top: 35%;
     right: 0%;
 }
 
@@ -1187,7 +1188,9 @@ a {
 .news-slider__item:hover .news-post__title {
     color: #FFFFFF;
 }
-
+#map{
+    height: 100%;
+}
 .ymaps-2-1-78-ground-pane{
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
@@ -1407,8 +1410,9 @@ img.footer-bottom__item {
     margin: auto;
     width: 50%;
 }
-
-
+.fx{
+    color: #828282 !important;
+}
 /* TEXT-POST SECTION */
 
 
@@ -3071,7 +3075,12 @@ h3.banner-item__title {
     display: flex;
     justify-content: flex-start;
 }
-
+.card-about-us__item_no-overflow{
+    overflow: visible;
+}
+.number-about-us__indicator > .num-indicator__item>.number{
+    font-size: 35px;
+}
 
 /* **************MEDIA****************** */
 
@@ -3196,9 +3205,10 @@ h3.banner-item__title {
     }
     .card-about-us__item_long{
         min-width: 100px;
-        max-width: 600px;
+        /* max-width: 600px; */
         padding: 40px 35px;
     }
+    
     .card-about-us__item_short{
         max-width: 300px;
         padding: 40px 35px;
@@ -3214,7 +3224,7 @@ h3.banner-item__title {
     }
     .advantages-block__photo_medal{
         max-width: 198px;
-        left: 93%;
+        /* left: 93%; */
         top: -2%;
     }
     .advantages-block__photo_right{
@@ -3245,6 +3255,10 @@ h3.banner-item__title {
     }
     .footer-subtitle__item:first-child{
         margin-right: 52%;
+    }
+    .number-about-us__indicator > .num-indicator__item>.number{
+        font-size: 33px;
+        line-height: 40px;
     }
 }
 
@@ -3443,6 +3457,12 @@ h3.banner-item__title {
         margin-bottom: 25px;
         width: 90%;
     }
+    .card-about-us__item_no-overflow .link{
+        display: none;
+    }
+    .history__text  .paragraph__item{
+        font-size: 13px;
+    }
 }
 
 @media screen and (max-width: 992.25px) {
@@ -3592,6 +3612,7 @@ h3.banner-item__title {
     }
 
     .king-number {
+        margin-top: 40px;
         position: relative;
         max-width: 340px;
     }
@@ -3874,14 +3895,14 @@ h3.banner-item__title {
         margin-right: 0px;
     }
     .main-wrap{
-        padding: 100px 0;
+        padding: 100px 0 160px;
         height: auto;
     }
     .main__subtitle{
         margin-bottom: 50px;
     }
     .summary-data__item{
-        min-height: 356px;
+        min-height: 330px;
     }
     .filter__item{
         width: auto;
@@ -3904,8 +3925,10 @@ h3.banner-item__title {
         height: 40px;
         padding: 12px 25px;
         margin: 0 auto;
+    }
+    .product__buy-button > p{
         font-size: 11px;
-        line-height: 11px;
+        line-height: normal;
         letter-spacing: 0.05em;
     }
     .card-about-us__item_long{
@@ -3940,7 +3963,7 @@ h3.banner-item__title {
     }
     .advantages-block__photo_medal{
         max-width: 214px;
-        left: 92%;
+        /* left: 92%; */
     }
     .figures-wrap{
         padding-top: 50px;
@@ -4018,6 +4041,10 @@ h3.banner-item__title {
     .footer-bottom__item:nth-child(2){
         margin-right: 16%;
     }
+    .card-about-us__item_long, .card-about-us__item_short{
+        padding: 30px 25px;
+    }
+
 }
 
 
@@ -4481,9 +4508,11 @@ h3.banner-item__title {
     }
 
     .summary-data__item_white>.link-summary>.link-summary__item:nth-child(1) {
-        margin-right: 10px;
+        margin-right: 12%;
     }
-
+    .number-about-us__title{
+        margin-bottom: 25px;
+    }
     .number-about-us__indicator>.num-indicator__item {
         max-width: 46%;
     }
@@ -4744,7 +4773,7 @@ h3.banner-item__title {
         margin-bottom: 70px;
     }
     .column-footer__item.column-footer__item_link.red-box{
-        padding: 15px 10px;
+        padding: 11px 10px;
         margin-left: 0px;
     }
     .column-footer__item.column-footer__item_link.red-box > a{
