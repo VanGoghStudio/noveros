@@ -1580,9 +1580,15 @@ p {
     bottom: 0;
     right: 0;
 }
-
+.idea__title{
+    font-size: 35px;
+}
+.banner-idea__title{
+    font-size: 27px;
+    line-height: 37px;
+}
 .major-text {
-    padding: 30px 30px 40px 30px;
+    padding: 30px 30px 48px 30px;
     background-color: #F3F2ED;
 }
 
@@ -1630,7 +1636,7 @@ ul>li {
     font-weight: 400;
     line-height: 23px;
     margin-bottom: 15px;
-    padding-left: 30px;
+    padding-left: 20px;
 }
 
 ul>li::marker {
@@ -1650,7 +1656,7 @@ ul>li:last-child {
 
 .check-list__item,
 .check-radio__item {
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 400;
     line-height: 23px;
     margin-bottom: 15px;
@@ -2194,9 +2200,9 @@ h3.banner-item__title {
     margin-top: 30px;
 }
 
-.banner-item__image_bottom {
+/* .banner-item__image_bottom {
     margin-top: 70px;
-}
+} */
 
 .other-block {
     width: 100%;
@@ -2276,7 +2282,23 @@ h3.banner-item__title {
     margin-bottom: 50px;
     border-bottom: 2px solid #EDECE8;
 }
-
+.banner-item_price{
+    align-items: flex-start;
+    padding: 20px 30px;
+    min-height: 320px;
+}
+.banner-item_price .banner-item__title{
+    margin-bottom: 35px;
+}
+.banner-item_price .banner-item__image{
+    max-width: 200px;
+    position: absolute;
+    bottom: 30px;
+    right: 0%;
+}
+.banner-item_price .banner-item__text{
+    max-width: 60%;
+}
 /* *************ITEM-PAGE SECTION************ */
 
 /* VACANCY */
@@ -2354,6 +2376,9 @@ h3.banner-item__title {
     margin: 10px;
     flex-grow: 1;
 }
+.grid__item_short-mobile{
+    display: none;
+}
 
 .grid__item_long>img {
     flex-grow: 2;
@@ -2367,7 +2392,8 @@ h3.banner-item__title {
 .grid__item_short>img {
     display: block;
     max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 100%;
     object-fit: none;
 }
 
@@ -3190,7 +3216,7 @@ h3.banner-item__title {
         margin-top: 20px;
     }
     .check-list__item{
-        padding-left: 40px;
+        padding-left: 0px;
     }
     .submit-form__input_text>input, .submit-form__input_text{
         max-width: none !important;
@@ -3475,6 +3501,21 @@ h3.banner-item__title {
     .number-about-us__indicator > .num-indicator__item>.number{
         font-size: 25px;
         line-height: normal;
+    }
+    .major-text{
+        padding: 30px 20px 50px 20px;
+    }
+    .section-thesis{
+        padding: 30px 20px 30px 20px;
+        font-size: 15px;
+        margin-bottom: 50px;
+    }
+    .section-thesis__paragraph{
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .banner-item_price{
+        min-height: 250px;
     }
 }
 
@@ -3784,7 +3825,7 @@ h3.banner-item__title {
     }
     .breadcrumbs__list{
         padding-left: 0px;
-        flex-wrap: wrap;
+        white-space: nowrap;
     }
     .breadcrumbs__item{
         font-size: 12px;
@@ -4183,7 +4224,7 @@ h3.banner-item__title {
         padding: 20px 15px;
     }
     .adv-company-wrap .card-about-us__item_short{
-        flex-basis: 60%;
+        flex-basis: 41%;
     }
     .card-about-us__item:last-child{
         margin-bottom: 0px; 
@@ -4268,7 +4309,7 @@ h3.banner-item__title {
     }
     /* TEXT BG */
     .section-text__paragraph{
-        font-size: 14px;
+        font-size: 15px;
     }
     .submit-form__input_text{
         max-width: 100%;
@@ -4354,7 +4395,8 @@ h3.banner-item__title {
         line-height: 15px;
     }
     .acor-container > label, .acor-title_uper{
-        font-size: 9px;
+        font-size: 13px;
+        line-height: 17px;
         margin-left: 5px;
     }
     .acor-container > label:before{
@@ -4513,7 +4555,7 @@ h3.banner-item__title {
     }
 
     .card-about-us__item {
-        min-height: 215px;
+        min-height: 240px;
     }
 
     .company-links__item:nth-child(3) {
@@ -4568,10 +4610,11 @@ h3.banner-item__title {
         max-width: 100%;
     }
     .submit-form{
-        padding: 20px;
+        padding: 20px 15px;
+        margin-bottom: 30px;
     }
     .submit-form__title{
-        font-size: 20px;
+        font-size: 22px;
         margin-bottom: 40px;
     }
     .submit-form__button{
@@ -4582,6 +4625,7 @@ h3.banner-item__title {
     }
     .submit-form__button:last-child{
         margin-bottom: 0px;
+        margin-top: 0px;
     }
     .submit-form__input_text{
         width: 100%;
@@ -4590,14 +4634,14 @@ h3.banner-item__title {
     }
     .submit-form__input_text > input{
         padding-left: 10px;
-        font-size: 13px;
+        font-size: 15px;
     }
     .file-title{
-        font-size: 10px;
-        margin: 0px 7px;
+        font-size: 12px;
+        margin: 0px 10px;
     }
     .submit-form__input_file small{
-        font-size: 8px;
+        font-size: 11px;
     }
     .table-grid__items_header p{
         font-size: 10px;
@@ -4634,6 +4678,14 @@ h3.banner-item__title {
     }
     .banner-item{
         padding: 20px 10px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    .banner-item_price{
+        min-height: 211px;
+    }
+    .banner-item_price .banner-item__image{
+        max-width: 130px;
     }
     .card-about-us__item .advantages-block__title {
         font-size: 13px;
@@ -4652,9 +4704,20 @@ h3.banner-item__title {
         max-width: 50%;
         padding-top: 15%;
     }
+    .header-image{
+        margin-bottom: 380px;
+    }
+    .header-image, .header-image>.content{
+        height: 380px;
+        min-height: 100px;
+    }
     .sticky-block{
-        max-width: 300px;
+        height: 100%;
+        max-height: 340px;
+        max-width: 100%;
+        padding: 30px 15px;
         left: 50%;
+        top: 100%;
         transform: translateX(-50%);
     }
     .sticky-block>h1{
@@ -4663,7 +4726,7 @@ h3.banner-item__title {
     }
     .major-text__paragraph_thin{
         font-size: 13px;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
     }
     .major-text__paragraph_small{
         line-height: 20px;
@@ -4692,12 +4755,24 @@ h3.banner-item__title {
     .gallery__title>.link{
         margin-left: 0px;
     }
+    .advantages-block__text{
+        max-width: 100%;
+    }
     .advantages-block__paragraph{
         font-size: 11px;
         margin-top: 0px;
+        line-height: 19px;
+    }
+    .advantages-block__photo_pass{
+        max-width: 100px;
+        margin-top: 15px;
+    }
+    .card-about-us__item_long .advantages-block__text{
+        max-width: 60%;
     }
     .adv-company-wrap .card-about-us__item_short{
         padding: 20px 15px;
+        min-height: 205px;
     }
     .news-post{
         max-width: none;
@@ -4717,6 +4792,7 @@ h3.banner-item__title {
     }
     .table-grid p{
         font-size: 9px;
+        line-height: 15px;
     }
     .footer-subtitle{
         flex-direction: column;
@@ -4765,12 +4841,12 @@ h3.banner-item__title {
         display: flex;
         align-items: flex-start;
         padding: 30px;
-        min-height: 500px;
+        min-height: 540px;
     }
     .form-idea-post{
         flex-direction: row;
         justify-content: flex-start;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
     .form-idea-post:last-child{
         margin-bottom: 0px;
@@ -4912,6 +4988,66 @@ h3.banner-item__title {
     .banner__text-slogan{
         font-size: 18px;
     }
+    .submit-form__input_file{
+        margin-bottom: 20px;
+    }
+    .acor-container > label:before{
+        width: 40px;
+        height: 40px;
+        line-height: 48px;
+    }
+    .acor-title_uper.red-text{
+        font-size: 14px;
+    }
+    .grid__item_long{
+        
+    }
+    .grid__item_short{
+        
+    }
+    .gallery__row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .first-col-photo > a:nth-child(1){
+        flex-basis: 100%;
+    }
+    .first-col-photo > a:nth-child(2), .first-col-photo > a:nth-child(4), .first-col-photo > a:nth-child(3){
+        height: 300px;
+        min-width: 10px;
+        height: 300px;
+        flex-basis: 30%;
+        flex-grow: 1;
+    }
+    .second-col-photo > a:nth-child(3){
+        order: 1;
+        flex-basis: 100%;
+    }
+    .second-col-photo > a:nth-child(1), .second-col-photo > a:nth-child(2){
+        order: 2;
+        height: 300px;
+        min-width: 10px;
+        height: 300px;
+        flex-basis: 30%;
+        flex-grow: 1;
+    }
+    .second-col-photo > a:nth-child(4){
+        display: none;
+    }
+    .poster-awards__item .awards-post__text{
+        font-size: 12px;
+    }
+    .banner-contact__item{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .banner-contact__item > h3{
+        font-size: 22px;
+    }
+    .connection__name{
+        font-size: 18px;
+    }
 }
 
 
@@ -4921,6 +5057,9 @@ h3.banner-item__title {
     }   
     .card-about-us__item_courier{
         min-height: 210px !important;
+    }
+    .card-about-us__item .advantages-block__title, .card-about-us__item_short .advantages-block__subtitle{
+        font-size: 10px;
     }
 }
 
