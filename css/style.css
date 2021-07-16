@@ -875,6 +875,7 @@ a {
 }
 
 .awards__headers {
+    position: relative;
     display: flex;
     justify-content: start;
     flex-direction: row;
@@ -977,12 +978,12 @@ a {
 }
 
 .slick-prev {
-    left: 92%;
+    left: calc(100% - 62px - 63px);
     background-image: url('../image/arrow-slick-black.png');
 }
 
 .slick-next {
-    left: calc(92% + 62px);
+    left: calc(100% - 62px);
     background-image: url('../image/arrow-slick-black.png');
     transform: rotateZ(180deg);
 }
@@ -3085,6 +3086,12 @@ h3.banner-item__title {
 /* **************MEDIA****************** */
 
 @media screen and (max-width: 1400.35px) {
+    .summary-data__item ul>li{
+        padding-left: 10px;
+    }
+    .content{
+        padding: 0 40px;
+    }
     .summary-data__item {
         padding: 45px 35px 10px 35px;
         min-height: 380px;
@@ -3102,9 +3109,9 @@ h3.banner-item__title {
     }
 
     .number-about-us__back-image {
-        top: 40%;
-        right: -10%;
-        width: 67vw;
+        top: 39%;
+        right: -16%;
+        width: 72vw;
     }
 
     .num-indicator__item {
@@ -3224,6 +3231,8 @@ h3.banner-item__title {
     }
     .advantages-block__photo_medal{
         max-width: 198px;
+        width: 100%;
+        height: auto;
         /* left: 93%; */
         top: -2%;
     }
@@ -3463,6 +3472,10 @@ h3.banner-item__title {
     .history__text  .paragraph__item{
         font-size: 13px;
     }
+    .number-about-us__indicator > .num-indicator__item>.number{
+        font-size: 25px;
+        line-height: normal;
+    }
 }
 
 @media screen and (max-width: 992.25px) {
@@ -3532,6 +3545,9 @@ h3.banner-item__title {
 
     .num-indicator__item>.text {
         font-size: 13px;
+    }
+    .news-post__data{
+        transform: translateY(calc(-30px + -100%)) translateX(16px);
     }
 
     ul>li {
@@ -4000,7 +4016,7 @@ h3.banner-item__title {
         padding: 18px 16px 22px;
     }
     .news-slider{
-        margin-bottom: 50px;
+        margin-bottom: 40px;
     }
     .maps{
         height: 442px;
@@ -4483,6 +4499,7 @@ h3.banner-item__title {
 }
 
 @media screen and (max-width: 600px) {
+    
     .catalog-links__item:first-child {
         max-width: 175px;
     }
@@ -4885,6 +4902,15 @@ h3.banner-item__title {
     }
     .card-about-us__item_courier .advantages-block__photo_right{
         max-width: 130px;
+    }
+    .number-about-us__indicator > .num-indicator__item>.number{
+        font-size: 22px;
+    }
+    .card-about-us__item_courier .link{
+        display: none;
+    }
+    .banner__text-slogan{
+        font-size: 18px;
     }
 }
 
