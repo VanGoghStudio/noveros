@@ -2914,8 +2914,8 @@ h3.banner-item__title {
 }
 
 .idea-form__banner {
-    min-height: 550px;
-    padding: 55px;
+    min-height: 600px;
+    padding: 55px 50px;
     flex-basis: 365px;
     flex-grow: 1;
 }
@@ -2930,6 +2930,9 @@ h3.banner-item__title {
 .idea-grid__item{
     border: none;
     padding: 20px;
+}
+.table-grid__items .awards-post__text{
+    margin-left: 10px;
 }
 
 /* *************IDEA*************** */
@@ -3115,9 +3118,25 @@ h3.banner-item__title {
     margin-bottom: 0px;
 }
 
+.idea-form__check-list{
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: stretch;
+}
+
+.idea-form__submit-form .submit-form__content{
+    justify-content: stretch;
+}
+.idea-form__submit-form .active{
+    padding: 28px 38px;
+}
+
 /* **************MEDIA****************** */
 
 @media screen and (max-width: 1400.35px) {
+    .submit-form__input_textarea{
+        max-width: 1000px;
+    }
     .summary-data__item ul>li{
         padding-left: 10px;
     }
