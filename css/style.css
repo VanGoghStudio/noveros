@@ -47,7 +47,9 @@ ______________________________________________________________
     padding: 0;
 
 }
-
+html{
+    overflow-x: hidden;
+}
 .body_fixed{
     padding-top: 84px;
 }
@@ -3109,6 +3111,10 @@ h3.banner-item__title {
     font-size: 35px;
 }
 
+.breadcrumbs__item{
+    margin-bottom: 0px;
+}
+
 /* **************MEDIA****************** */
 
 @media screen and (max-width: 1400.35px) {
@@ -3300,6 +3306,9 @@ h3.banner-item__title {
 @media screen and (max-width: 1024.25px) {
     .no-item-banner{
         display: none;
+    }
+    .idea__title{
+        font-size: 22px;
     }
     .king-number__king-photo {
         max-width: 240px;
@@ -3822,6 +3831,7 @@ h3.banner-item__title {
     }
     .breadcrumbs{
         margin: 20px 10px 20px;
+        overflow: hidden;
     }
     .breadcrumbs__list{
         padding-left: 0px;
@@ -4705,7 +4715,10 @@ h3.banner-item__title {
         padding-top: 15%;
     }
     .header-image{
-        margin-bottom: 380px;
+        margin-bottom: 340px;
+    }
+    .tenders-header__paragraph_small{
+        margin-bottom: 40px;
     }
     .header-image, .header-image>.content{
         height: 380px;
@@ -4713,7 +4726,7 @@ h3.banner-item__title {
     }
     .sticky-block{
         height: 100%;
-        max-height: 340px;
+        max-height: 300px;
         max-width: 100%;
         padding: 30px 15px;
         left: 50%;
@@ -4723,6 +4736,10 @@ h3.banner-item__title {
     .sticky-block>h1{
         font-size: 24px;
         line-height: 31px;
+        margin-bottom: 30px;
+    }
+    .idea-header__paragraph_small{
+        margin-bottom: 35px;
     }
     .major-text__paragraph_thin{
         font-size: 13px;
