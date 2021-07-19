@@ -4159,6 +4159,9 @@ h3.banner-item__title {
 
 
 @media screen and (max-width: 759.25px) {
+    .table-grid__items .awards-post__text{
+        margin-left: 0px;
+    }
     .mobile-open-search{
         margin-left: 0px;
         margin-right: 0px;
@@ -4869,7 +4872,11 @@ h3.banner-item__title {
         padding: 25px 15px 10px;
     }
     .table-grid p{
-        font-size: 9px;
+        font-size: 8px;
+        line-height: 14px;
+    }
+    .table-grid__items .awards-post__text{
+        font-size: 10px;
         line-height: 15px;
     }
     .footer-subtitle{
@@ -4914,6 +4921,7 @@ h3.banner-item__title {
     } */
     .idea-form{
         flex-direction: column;
+        margin-bottom: 40px;
     }
     .idea-form__banner{
         display: flex;
@@ -5126,6 +5134,13 @@ h3.banner-item__title {
     .connection__name{
         font-size: 18px;
     }
+    .idea__title{
+        font-size: 24px;
+    }
+    .banner-idea__title{
+        font-size: 24px;
+        line-height: 30px;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -5143,6 +5158,9 @@ h3.banner-item__title {
         min-height: 210px !important;
     }
     .card-about-us__item .advantages-block__title, .card-about-us__item_short .advantages-block__subtitle{
+        font-size: 10px;
+    }
+    .poster-awards__item .awards-post__text{
         font-size: 10px;
     }
 }
