@@ -2591,16 +2591,15 @@ h3.banner-item__title {
 }
 
 .news-card__posts {
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0px;
     margin-bottom: 50px;
+    grid-gap: 0px;
 }
 
-.news-post {
-    flex-basis: 24%;
-    max-width: 25%;
-    flex-grow: 1;
-    margin-bottom: 20px;
+.news-post { 
+    margin-bottom: 0px;
 }
 
 .pagination {
@@ -3323,6 +3322,13 @@ h3.banner-item__title {
 }
 
 @media screen and (max-width: 1024.25px) {
+    .news-card__posts {
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 30px;
+    }
+    .news-card{
+        padding-bottom: 50px;
+    }
     .header-image{
         margin-bottom: 40px;
     }
@@ -3555,6 +3561,9 @@ h3.banner-item__title {
 }
 
 @media screen and (max-width: 992.25px) {
+    .news-card__posts .news-post__text-wrap{
+        min-height: 230px;
+    }
     .company-links__text {
         display: none;
     }
@@ -4597,7 +4606,15 @@ h3.banner-item__title {
 }
 
 @media screen and (max-width: 600px) {
-    
+    .news-card__posts .news-post__text-wrap{
+        min-height: 250px;
+    }
+    .news-card{
+        padding-bottom: 20px;
+    }
+    .news-card__posts{
+        grid-template-columns: repeat(2, 1fr);
+    }
     .catalog-links__item:first-child {
         max-width: 175px;
     }
