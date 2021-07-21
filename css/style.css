@@ -2933,6 +2933,7 @@ h3.banner-item__title {
 }
 .table-grid__items .awards-post__text{
     margin-left: 10px;
+    font-weight: 700;
 }
 .idea-form-wrap{
     padding-bottom: 90px;
