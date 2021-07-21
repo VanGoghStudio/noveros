@@ -2917,6 +2917,7 @@ h3.banner-item__title {
     padding: 55px 50px;
     flex-basis: 365px;
     flex-grow: 1;
+    min-width: 305px;
 }
 
 .idea-grid{
@@ -3409,6 +3410,7 @@ h3.banner-item__title {
 
 @media screen and (max-width: 1024.25px) {
     
+    
     .news-card__posts {
         grid-template-columns: repeat(3, 1fr);
         margin-bottom: 30px;
@@ -3648,6 +3650,12 @@ h3.banner-item__title {
 }
 
 @media screen and (max-width: 992.25px) {
+    .sticky-block{
+        left: calc(0% + 15px);
+    }
+    .idea__title{
+        font-size: 27px;
+    }
     .tender-cards .card-about-us__item_long{
         min-height: 110px;
         padding: 30px 15px;
@@ -4259,6 +4267,7 @@ h3.banner-item__title {
 
 
 @media screen and (max-width: 759.25px) {
+    
     .table-grid__items .awards-post__text{
         margin-left: 0px;
     }
@@ -5293,6 +5302,9 @@ h3.banner-item__title {
     }
     .poster-awards__item .awards-post__text{
         font-size: 10px;
+    }
+    .idea-form__banner {
+        min-width: 275px;
     }
 }
 
