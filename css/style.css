@@ -3150,10 +3150,49 @@ h3.banner-item__title {
 .idea-form__input_name > input, .idea-form__input_phone > input{
     max-width: none;
 }
+.tender-cards{
+    flex-wrap: nowrap;
+}
+.tender-cards .submit-form__button.active{
+    min-height: 60px;
+    margin-top: 0px;
+    width: 100%;
+    min-width: 10px;
+    padding: 10px 40px;
+    min-width: 0px;
+}
 
 /* **************MEDIA****************** */
 
 @media screen and (max-width: 1400.35px) {
+    /* tenders page */
+    .tender-cards .submit-form__content{
+        justify-content: flex-start;
+    }
+    .tender-cards .subscribe-tenders__value-link{
+        margin-top: 50px;
+    }
+    .tender-cards .subscribe-tenders__value-link:last-child{
+        margin-top: 10px;
+    }
+    .tenders-cards .subscribe-tenders__value{
+        margin-bottom: 20px;
+    }
+    .tender-cards .submit-form__input_text{
+        max-width: 100%;
+    }
+    .tender-cards .subscribe-tenders__input>input{
+        width: 100%;
+        max-width: none;
+        margin-bottom: 20px;
+    }
+    .tender-cards .subscribe-tenders__value{
+        margin-bottom: 40px;
+    }
+    .tender-cards .connection__item{
+        width: 100%;
+    }
+    /* end tenders */
     .submit-form__input_textarea{
         max-width: 1000px;
     }
@@ -3282,7 +3321,7 @@ h3.banner-item__title {
         margin-top: 0px;
     }
     .header-image>.content, .header-image{
-        height: 70vh;
+        height: 580px;
     }
     .banner{
         padding: 75px 50px 75px 35px;
@@ -3351,7 +3390,24 @@ h3.banner-item__title {
     }
 }
 
+@media screen and (max-width: 1280.25px) {
+    .tender-cards .card-about-us__item_long{
+
+        max-width: 100%;
+        min-height: 240px;
+    }
+    .tender-cards .subscribe-tenders__form{
+        width: 100%;
+        margin: 0px;
+        max-width: 100%;
+    }
+    .tender-cards{
+        flex-wrap: wrap;
+    }
+}
+
 @media screen and (max-width: 1024.25px) {
+    
     .news-card__posts {
         grid-template-columns: repeat(3, 1fr);
         margin-bottom: 30px;
@@ -3591,6 +3647,10 @@ h3.banner-item__title {
 }
 
 @media screen and (max-width: 992.25px) {
+    .tender-cards .card-about-us__item_long{
+        min-height: 110px;
+        padding: 30px 15px;
+    }
     .news-card__posts .news-post__text-wrap{
         min-height: 230px;
     }
@@ -4636,6 +4696,18 @@ h3.banner-item__title {
 }
 
 @media screen and (max-width: 600px) {
+    .tender-cards .subscribe-tenders__value{
+        margin-bottom: 20px;
+    }
+    .tender-cards .subscribe-tenders__value{
+        margin-bottom: 20px;
+    }
+    .tender-cards .submit-form__input_text{
+        margin-bottom: 5px;
+    }
+    .tender-cards .submit-form__button.active{
+        margin-top: 0px;
+    }
     .idea-form-wrap{
         padding-bottom: 10px;
     }
