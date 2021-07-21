@@ -1504,6 +1504,7 @@ p {
     max-width: 100%;
     object-fit: none;
     padding: 30px 30px 40px;
+    padding-left: 0px;
     float: left;
 }
 
@@ -2014,7 +2015,8 @@ textarea {
 
 ol {
     padding-left: 20px;
-    margin-bottom: 150px;
+    margin-bottom: 15px;
+    /* margin-bottom: 150px; */
 }
 
 ol>li {
@@ -3164,6 +3166,9 @@ h3.banner-item__title {
     padding: 10px 40px;
     min-width: 0px;
 }
+.text-form{
+    margin-bottom: 40px;
+}
 
 /* **************MEDIA****************** */
 
@@ -3394,6 +3399,25 @@ h3.banner-item__title {
         font-size: 33px;
         line-height: 40px;
     }
+    .text-form > .submit-form__content{
+        justify-content: flex-start;
+    }
+    .text-form .submit-form__input_text>input{
+        max-width: 100%;
+    }
+    .text-form .submit-form__input_text{
+        max-width: 100%;
+        display: flex;
+        flex-grow: 1;
+        flex-basis: 45%;
+        
+    }
+    .text-form .submit-form__input_text:first-child{
+        margin-right: 20px;
+    }
+    .submit-form{
+        padding: 40px 30px;
+    }
 }
 
 @media screen and (max-width: 1280.25px) {
@@ -3482,11 +3506,16 @@ h3.banner-item__title {
     .submit-button{
         font-size: 12px;
     }
-    .submit-form__button{
+    /* .submit-form__button{
         max-width: 380px;
         margin-right: 5px;
         width: 60%;
         margin-bottom: 10px;
+    } */
+    .submit-form__button{
+        max-width: 100%;
+        width: 48%;
+        margin: 0 20px 0 0;
     }
     .submit-form__button:last-child{
         margin-bottom: 0px;
@@ -3646,7 +3675,7 @@ h3.banner-item__title {
     }
     .section-thesis__paragraph{
         font-size: 15px;
-        line-height: 18px;
+        line-height: 26px;
     }
     .banner-item_price{
         min-height: 250px;
@@ -3798,7 +3827,6 @@ h3.banner-item__title {
         margin-right: 3%;
         flex-grow: 1;
     }
-
     .history {
         padding-top: 50px;
         padding-bottom: 60px;
@@ -4266,6 +4294,10 @@ h3.banner-item__title {
     }
     .idea-form__submit-form .active{
         padding: 0 36px;
+    }
+    .text-form{
+        justify-content: flex-start;
+        margin-bottom: 40px;
     }
 }
 
@@ -4854,6 +4886,7 @@ h3.banner-item__title {
     }
     .text-flow__image-left{
         padding: 10px;
+        padding-left: 0px;
     }
     .header{
         padding: 0 15px;
@@ -5285,6 +5318,17 @@ h3.banner-item__title {
     .banner-idea__title{
         font-size: 24px;
         line-height: 30px;
+    }
+    .text-form .submit-form__input_text:first-child{
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .text-form .submit-form__input_text{
+        flex-basis: 80%;
+        margin-bottom: 20px;
+    }
+    .text-with-hint__paragraph{
+        padding: 30px 20px;
     }
 }
 
