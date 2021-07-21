@@ -1584,6 +1584,7 @@ p {
 }
 .idea__title{
     font-size: 35px;
+    line-height: 30px;
 }
 .banner-idea__title{
     font-size: 27px;
@@ -3168,6 +3169,9 @@ h3.banner-item__title {
 
 @media screen and (max-width: 1400.35px) {
     /* tenders page */
+    .sticky-block{
+        left: calc(0% + 40px);
+    }
     .tender-cards .submit-form__content{
         justify-content: flex-start;
     }
@@ -3655,7 +3659,6 @@ h3.banner-item__title {
     }
     .idea__title{
         font-size: 27px;
-        line-height: 36px;
     }
     .tender-cards .card-about-us__item_long{
         min-height: 110px;
@@ -3965,7 +3968,7 @@ h3.banner-item__title {
         margin-left: 30px;
     }
     .breadcrumbs{
-        margin: 20px 10px 20px;
+        margin: 20px 15px 20px;
         overflow: hidden;
     }
     .breadcrumbs__list{
@@ -5069,7 +5072,7 @@ h3.banner-item__title {
         align-items: flex-start;
         padding: 30px 15px;
         min-height: 540px;
-
+        min-width: 100px;
     }
     .form-idea-post{
         flex-direction: row;
