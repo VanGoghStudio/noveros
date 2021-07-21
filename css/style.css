@@ -2917,7 +2917,7 @@ h3.banner-item__title {
     padding: 55px 50px;
     flex-basis: 365px;
     flex-grow: 1;
-    min-width: 305px;
+    min-width: 365px;
 }
 
 .idea-grid{
@@ -3655,6 +3655,7 @@ h3.banner-item__title {
     }
     .idea__title{
         font-size: 27px;
+        line-height: 36px;
     }
     .tender-cards .card-about-us__item_long{
         min-height: 110px;
@@ -5068,6 +5069,7 @@ h3.banner-item__title {
         align-items: flex-start;
         padding: 30px 15px;
         min-height: 540px;
+
     }
     .form-idea-post{
         flex-direction: row;
