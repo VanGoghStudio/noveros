@@ -1657,6 +1657,9 @@ ul>li:last-child {
     display: flex;
     flex-direction: column;
 }
+.check-list{
+    padding-left: 40px;
+}
 
 .check-list__item,
 .check-radio__item {
