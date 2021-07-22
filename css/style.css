@@ -1968,6 +1968,13 @@ textarea {
 .submit-form__button:last-child {
     margin-right: 0px;
 }
+.add-to-cart{
+    transition: .3s;
+}
+.add-to-cart:hover{
+    background-color: #464646;
+    color: #FFFFFF;
+}
 
 /* ********************TABLE******************** */
 
@@ -2168,6 +2175,8 @@ ol>li::marker {
     flex-wrap: nowrap;
     padding: 30px 30px 40px 30px;
     margin-bottom: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .banner-item_dark {
@@ -2202,8 +2211,9 @@ h3.banner-item__title {
 }
 
 .banner-item__link {
+    position: absolute;
+    bottom: 40px;
     display: inline-block;
-    margin-top: 52px;
 }
 
 .banner-item__image_middle {
@@ -2304,7 +2314,12 @@ h3.banner-item__title {
     max-width: 200px;
     position: absolute;
     bottom: 30px;
-    right: 0%;
+    right: 30px;
+}
+.banner-item__image.banner-item__image_bottom > img{
+    display: block;
+    max-width: 100%;
+    width: 100%;
 }
 .banner-item_price .banner-item__text{
     max-width: 60%;
@@ -3275,7 +3290,7 @@ h3.banner-item__title {
     }
     /* ITEM-PAGE */
     .submit-form__content{
-        justify-content: space-evenly;
+        justify-content: stretch;
     }
     .submit-form__point{
         margin-left: 20px;
@@ -3424,7 +3439,14 @@ h3.banner-item__title {
         padding: 40px 30px;
     }
     .subscribe-tenders__form{
-        padding: 20px 30px 0;
+        padding: 20px 0px 0;
+    }
+    /* item page */
+    .grid-item__image{
+        padding: 100px 90px ;
+    }
+    .banner-item_price .banner-item__text{
+        max-width: 55%;
     }
 }
 
@@ -3445,7 +3467,6 @@ h3.banner-item__title {
 }
 
 @media screen and (max-width: 1024.25px) {
-    
     
     .news-card__posts {
         grid-template-columns: repeat(3, 1fr);
@@ -3534,15 +3555,6 @@ h3.banner-item__title {
         margin: 15px 0px;
     }
     /* ITEM PAGE */
-    h3.banner-item__title{
-        font-size: 20px;
-        line-height: normal;
-        margin-bottom: 10px;
-    }
-    .banner-item__paragraph{
-        margin-top: 0px;
-        font-size: 14px;
-    }
     .banner-item__image{
         margin-left: 10px;
     }
@@ -3685,8 +3697,24 @@ h3.banner-item__title {
         font-size: 15px;
         line-height: 26px;
     }
+    /* item page */
     .banner-item_price{
         min-height: 250px;
+    }
+    h3.banner-item__title{
+        font-size: 22px;
+        margin-bottom: 15px !important;
+    }
+    .banner-item__paragraph{
+        margin-top: 0px;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .banner-item__image_middle{
+        margin-top: 0px;
+    }
+    .banner-item_price .banner-item__image{
+        max-width: 160px;
     }
 }
 
@@ -4051,7 +4079,7 @@ h3.banner-item__title {
         order: 2;
     }
     .banner-item{
-        max-width: 550px;
+        max-width: none;
         margin: 0 auto;
         margin-bottom: 20px;
     }
@@ -4310,6 +4338,36 @@ h3.banner-item__title {
         justify-content: flex-start;
         margin-bottom: 40px;
     }
+    /* tablet */
+    .grid-item__photo-block{
+        width: 100%;
+        max-width: none;
+    }
+    .submit-form__criteria{
+        margin-bottom: 15px;
+    }
+    .submit-form__point{
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+    .other-card__text{
+        width: 100%;
+    }
+    .other-card__image{
+        margin-right: 30px;
+        max-width: 120px;
+    }
+    .other-card__image>img{
+        display: block;
+        max-width: 100%;
+    }
+    .banner-item__paragraph{
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .banner-item_price .banner-item__text{
+        max-width: 65%;
+    }
 }
 
 
@@ -4564,7 +4622,7 @@ h3.banner-item__title {
     }
     .other-block{
         margin-top: 0px;
-        margin-bottom: 0px;
+        margin-bottom: 20px;
     }
     .other-card__title{
         font-size: 12px;
@@ -4586,26 +4644,26 @@ h3.banner-item__title {
     .other-card__image>img{
         max-width: 100%;
     }
-    .banner-item__image{
+    /* .banner-item__image{
         max-width: 120px;
         margin: 0 auto;
         margin-top: 10px !important;
         width: 50%;
-    }
-    h3.banner-item__title{
+    } */
+    /* h3.banner-item__title{
         font-size: 15px;
-    }
-    .banner-item__text{
+    } */
+    /* .banner-item__text{
         width: 50%;
-    }
+    } */
     .banner-item__image > img{
         display: block;
         max-width: 100%;
     }
-    .banner-item__paragraph{
+    /* .banner-item__paragraph{
         font-size: 10px;
         line-height: 15px;
-    }
+    } */
     .acor-container > label, .acor-title_uper{
         font-size: 13px;
         line-height: 17px;
@@ -4914,14 +4972,14 @@ h3.banner-item__title {
         line-height: normal;
     }
     .form__count{
-        margin-bottom: 10px;
+        margin-bottom: 25px;
     }
     .main-text>.submit-form{
         padding-bottom: 30px;
         margin-bottom: 35px;
     }
     .banner-item{
-        padding: 20px 10px;
+        padding: 30px 10px;
         margin-bottom: 0px;
         margin-top: 0px;
     }
@@ -4929,7 +4987,8 @@ h3.banner-item__title {
         min-height: 211px;
     }
     .banner-item_price .banner-item__image{
-        max-width: 130px;
+        max-width: 120px;
+        right: 10px;
     }
     .card-about-us__item .advantages-block__title {
         font-size: 13px;
@@ -5343,6 +5402,41 @@ h3.banner-item__title {
     }
     .major-text{
         padding: 40px 20px;
+    }
+    /* .banner-item{
+        min-height: 200px;
+    } */
+    .banner-item__text{
+        max-width: 65%;
+    }
+    .banner-item_price .banner-item__text{
+        max-width: 50%;
+    }
+    h3.banner-item__title{
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 20px;
+    }
+    .banner-item__paragraph{
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 15px;
+    }
+    .main-text__weight{
+        margin-bottom: 15px;
+    }
+    .main-text__name{
+        margin-bottom: 20px;
+    }
+    .submit-form__point{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .price-item{
+        margin-bottom: 25px;
+    }
+    .item-price{
+        display: none;
     }
 }
 
