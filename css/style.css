@@ -5129,7 +5129,7 @@ h3.banner-item__title {
     .major-text__paragraph_thin{
         font-size: 13px;
         margin-bottom: 30px;
-        line-height: 22;
+        line-height: 22px;
     }
     .major-text__paragraph_small{
         line-height: 20px;
