@@ -3203,8 +3203,6 @@ h3.banner-item__title {
 }
 /* vacancy */
 .adv-company-wrap h1{
-    font-size: 35px;
-    line-height: 49px;
     margin-bottom: 60px;
 }
 .mobile-header{
@@ -3601,9 +3599,13 @@ h3.banner-item__title {
     }
     .adv-company-wrap .card-about-us__item_short{
         padding: 30px 25px 50px;
-        min-height: 275px;
+        min-height: 300px;
+        flex-basis: 40%;
+        max-width: none;
     }
-    
+    .adv-company-wrap .card-about-us__item_long{
+        flex-basis: 84%;
+    }
     .acor-body__content{
         width: 100%;
         justify-content: flex-start;
@@ -4426,14 +4428,20 @@ h3.banner-item__title {
     }
     .adv-company-wrap .card-about-us__item_short{
         flex-basis: 40%;
+        min-height: 260px;
     }
     .adv-company-wrap .advantages-block__paragraph{
         margin-top: 20px;
         font-size: 13px;
+        line-height: 22px;
     }
     .adv-company-wrap h1{
         margin-top: 0px;
         margin-bottom: 40px;
+    }
+    h1{
+        font-size: 25px;
+        line-height: 35px;
     }
 }
 
@@ -5121,7 +5129,7 @@ h3.banner-item__title {
     .major-text__paragraph_thin{
         font-size: 13px;
         margin-bottom: 30px;
-        line-height: 22px;
+        line-height: 22;
     }
     .major-text__paragraph_small{
         line-height: 20px;
