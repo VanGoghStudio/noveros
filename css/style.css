@@ -2383,7 +2383,6 @@ h3.banner-item__title {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-bottom: 60px;
 }
 
 .gallery__title>h2 {
@@ -2393,6 +2392,7 @@ h3.banner-item__title {
 .gallery__title>.link {
     margin-top: 10px;
     margin-left: 60px;
+    margin-bottom: 40px;
 }
 
 .grid__item_long {
@@ -3201,6 +3201,16 @@ h3.banner-item__title {
 .text-form{
     margin-bottom: 40px;
 }
+/* vacancy */
+.adv-company-wrap h1{
+    font-size: 35px;
+    line-height: 49px;
+    margin-bottom: 60px;
+}
+.mobile-header{
+    display: none;
+}
+
 
 /* **************MEDIA****************** */
 
@@ -3365,6 +3375,7 @@ h3.banner-item__title {
     }
     .header-image>.content, .header-image{
         height: 580px;
+        background-position: 67%;
     }
     .banner{
         padding: 75px 50px 75px 35px;
@@ -3464,6 +3475,14 @@ h3.banner-item__title {
         width: 60px;
         height: 60px;
     }
+    /* vacancy */
+    .adv-company-wrap .card-about-us__item_short{
+        padding: 35px;
+    }
+    .adv-company-wrap .advantages-block__number{
+        margin-bottom: 30px;
+    }
+    
 }
 
 @media screen and (max-width: 1280.25px) {
@@ -3581,8 +3600,7 @@ h3.banner-item__title {
         height: 500px;
     }
     .adv-company-wrap .card-about-us__item_short{
-        padding-bottom: 50px;
-        flex-basis: 40%;
+        padding: 30px 35px;
     }
     .acor-body__content{
         width: 100%;
@@ -3731,6 +3749,9 @@ h3.banner-item__title {
     }
     .banner-item_price .banner-item__image{
         max-width: 160px;
+    }
+    .grid__item_long, .grid__item_short{
+        margin: 5px;
     }
 }
 
@@ -4400,6 +4421,9 @@ h3.banner-item__title {
         font-size: 25px;
         line-height: 31px;
     }
+    .adv-company-wrap .card-about-us__item_short{
+        flex-basis: 40%;
+    }
 }
 
 
@@ -4840,6 +4864,7 @@ h3.banner-item__title {
     .paragraph_narrow{
         margin-bottom: 0px;
     }
+    
 }
 
 @media screen and (max-width: 600px) {
@@ -5040,9 +5065,6 @@ h3.banner-item__title {
         max-width: 50%;
         padding-top: 15%;
     }
-    .header-image{
-        margin-bottom: 340px;
-    }
     .tenders-header__paragraph_small{
         margin-bottom: 40px;
     }
@@ -5102,6 +5124,15 @@ h3.banner-item__title {
     .acor-container > label, .acor-title_uper{
         margin-left: 0px;
     }
+    .acor-container > label{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .acor-container input:checked + label{
+        margin-left: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
     .send-vacancy > .submit-form {
         padding: 0;
     }
@@ -5115,6 +5146,8 @@ h3.banner-item__title {
     }
     .gallery__title>.link{
         margin-left: 0px;
+        margin-bottom: 20px;
+        margin-top: -10px;
     }
     .advantages-block__text{
         max-width: 100%;
@@ -5133,7 +5166,7 @@ h3.banner-item__title {
     }
     .adv-company-wrap .card-about-us__item_short{
         padding: 20px 15px;
-        min-height: 205px;
+        min-height: 211px;
     }
     .news-post{
         max-width: none;
@@ -5367,15 +5400,18 @@ h3.banner-item__title {
         font-size: 14px;
     }
     .grid__item_long{
-        
+        margin: 0px;
     }
     .grid__item_short{
+        margin: 0px;
         
     }
     .gallery__row{
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
+        grid-gap: 5px;
+        margin-bottom: 5px;
     }
     .first-col-photo > a:nth-child(1){
         flex-basis: 100%;
@@ -5489,6 +5525,46 @@ h3.banner-item__title {
     .news-slider__item{
         margin-bottom: 15px;
     }
+    /* vacancy */
+    .adv-company-wrap .advantages-block__number{
+        margin-bottom: 15px;
+    } 
+    .adv-company-wrap h1{
+        font-size: 22px;
+        line-height: 31px;
+        margin-bottom: 30px;
+        margin-top: 0px;
+    }
+    /* vacancy-tenders */
+    .header-image{
+        margin-bottom: 0px;
+    }
+    .header-image>.content{
+        display: none;
+    }
+    .mobile-header{
+        display: flex;
+        margin-bottom: 30px;
+    }
+    .mobile-header .content{
+        padding: 0px;
+        width: 100%;
+    }
+    .mobile-header .sticky-block{
+        position: static;
+        transform: none;
+        height: auto;
+        max-height: none;
+    }
+    .acor-container > label:before{
+        left: 103%;
+    }
+    .adv-company-wrap .check-list{
+        padding-left: 0px;
+    }
+    .adv-company-wrap .acor-body__check-list > .submit-form__button{
+        margin: 25px auto 0 auto;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -5513,6 +5589,9 @@ h3.banner-item__title {
     }
     .idea-form__banner {
         min-width: 275px;
+    }
+    .header-image, .header-image>.content{
+        height: 300px;
     }
 }
 
