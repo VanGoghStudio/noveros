@@ -73,7 +73,12 @@ body {
     overflow-x: hidden;
     /* padding-top: 130px; */
 }
-
+.preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+  }
 input {
     border: 2px solid #FFFFFF;
     /* border: 2px solid #DCDCDC; */

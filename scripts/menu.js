@@ -1,5 +1,6 @@
 'use strict'
 document.addEventListener('DOMContentLoaded', function () {
+      document.querySelector("body").classList.remove("preload");
     // map
     const openMenuBtn = document.querySelector('.open-map-btn'),
         closeMenuBtn = document.querySelector('.close-map-btn'),
