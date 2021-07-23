@@ -2484,10 +2484,13 @@ h3.banner-item__title {
 }
 
 .connection__item_row {
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
 }
 
 .connection__item_row>.banner-contact__type {
@@ -3497,6 +3500,9 @@ h3.banner-item__title {
     .tender-cards{
         flex-wrap: wrap;
     }
+    .connection__item_row>.banner-contact__type{
+        margin: 0px 20px 0px 0px;
+    }
 }
 
 @media screen and (max-width: 1024.25px) {
@@ -4443,6 +4449,23 @@ h3.banner-item__title {
         font-size: 25px;
         line-height: 35px;
     }
+    .banner-contact__item{
+        height: auto;
+    }
+    .contact-header{
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+    }
+    .contact-info__connection>.connection__item{
+        margin-bottom: 30px;
+    }
+    .connection__item_row>.banner-contact__type{
+        margin: 0 auto;
+        margin-right: 95px;
+    }
+    .connection__item_row{
+        flex-wrap: wrap;
+    }
 }
 
 
@@ -5338,7 +5361,7 @@ h3.banner-item__title {
     }
     .maps{
         height: 400px;
-        padding: 17px;
+        padding: 10px 15px;
     }
     .footer-link__item{
         padding-right: 15px;
@@ -5594,6 +5617,32 @@ h3.banner-item__title {
     }
     .gallery__title{
         margin-bottom: 20px;
+    }
+    /* contact */
+    h1{
+        font-size: 25px;
+        line-height: 35px;
+    }
+   
+    .connection__value{
+        font-size: 13px;
+    }
+    .connection__item_row>.banner-contact__type, .connection__type{
+        line-height: normal;
+        margin-bottom: 10px;
+    }
+    .connection__item{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .connection__item_last{
+        margin-bottom: 0px;
+    }
+    .banner-contact_card-about-us{
+        padding-bottom: 0px;
+    }
+    .banner-contact{
+        margin-bottom: 10px;    
     }
 }
 
