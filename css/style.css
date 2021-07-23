@@ -4390,7 +4390,7 @@ h3.banner-item__title {
     }
     .news-title h1{
         font-size: 25px;
-        line-height: 34px;
+        line-height: 31px;
     }
 }
 
@@ -5475,7 +5475,10 @@ h3.banner-item__title {
         font-size: 22px;
         line-height: 31px;
         margin-top: 20px;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
+    }
+    .news-slider__item{
+        margin-bottom: 15px;
     }
 }
 
