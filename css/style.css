@@ -4377,6 +4377,9 @@ h3.banner-item__title {
         font-size: 13px;
         line-height: 22px;
     }
+    h3.banner-item__title{
+        margin-bottom: 15px !important;
+    }
     .banner-item_price .banner-item__text{
         max-width: 65%;
     }
@@ -5008,11 +5011,12 @@ h3.banner-item__title {
         margin-top: 0px;
     }
     .banner-item_price{
-        min-height: 211px;
+        min-height: 150px;
     }
     .banner-item_price .banner-item__image{
         max-width: 120px;
         right: 10px;
+        bottom: 20px;
     }
     .card-about-us__item .advantages-block__title {
         font-size: 13px;
