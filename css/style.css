@@ -3600,8 +3600,10 @@ h3.banner-item__title {
         height: 500px;
     }
     .adv-company-wrap .card-about-us__item_short{
-        padding: 30px 35px;
+        padding: 30px 25px 50px;
+        min-height: 275px;
     }
+    
     .acor-body__content{
         width: 100%;
         justify-content: flex-start;
@@ -4156,10 +4158,11 @@ h3.banner-item__title {
         font-size: 12px;
     }
     .gallery__title{
-        margin-bottom: 30px;
+        margin-bottom: 0px;
+        margin-top: -10px;
     }
     .adv-company-wrap .card-about-us{
-        padding-bottom: 30px;
+        padding-bottom: 50px;
     }
     .acor-body .check-list__item{
         font-size: 10px;
@@ -4423,6 +4426,14 @@ h3.banner-item__title {
     }
     .adv-company-wrap .card-about-us__item_short{
         flex-basis: 40%;
+    }
+    .adv-company-wrap .advantages-block__paragraph{
+        margin-top: 20px;
+        font-size: 13px;
+    }
+    .adv-company-wrap h1{
+        margin-top: 0px;
+        margin-bottom: 40px;
     }
 }
 
@@ -4787,7 +4798,7 @@ h3.banner-item__title {
        max-width: none;
    }
    .acor-container > label{
-       padding: 10px;
+       padding: 20px 10px;
    }
    .img-sub{
         font-size: 8px;
@@ -5110,6 +5121,7 @@ h3.banner-item__title {
     .major-text__paragraph_thin{
         font-size: 13px;
         margin-bottom: 30px;
+        line-height: 22px;
     }
     .major-text__paragraph_small{
         line-height: 20px;
@@ -5165,7 +5177,7 @@ h3.banner-item__title {
         max-width: 60%;
     }
     .adv-company-wrap .card-about-us__item_short{
-        padding: 20px 15px;
+        padding: 20px 15px 30px;
         min-height: 211px;
     }
     .news-post{
@@ -5565,11 +5577,24 @@ h3.banner-item__title {
     .adv-company-wrap .acor-body__check-list > .submit-form__button{
         margin: 25px auto 0 auto;
     }
+    .adv-company-wrap .advantages-block__paragraph{
+        font-size: 11px;
+        line-height: 19px;
+    }
+    .adv-company-wrap .card-about-us{
+        padding-bottom: 40px;
+    }
+    .gallery__title{
+        margin-bottom: 20px;
+    }
 }
 
 @media screen and (max-width: 400px) {
     .block-contact{
         min-height: 150px;
+    }
+    .adv-company-wrap .card-about-us__item_short{
+        min-height: 225px;
     }
 }
 
