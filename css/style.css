@@ -2607,10 +2607,11 @@ h3.banner-item__title {
 
 .news-title {
     margin-bottom: 50px;
+    margin-top: 60px;
 }
 
 .news-card {
-    padding-bottom: 120px;
+    padding-bottom: 90px;
 }
 
 .news-card__posts {
@@ -2623,6 +2624,9 @@ h3.banner-item__title {
 
 .news-post { 
     margin-bottom: 0px;
+}
+.news-slider__item{
+    margin-bottom: 22px;
 }
 
 .pagination {
@@ -2639,7 +2643,7 @@ h3.banner-item__title {
     font-weight: 700;
     line-height: 20px;
     color: #8F8F8F;
-    margin-left: 30px;
+    margin-left: 40px;
     cursor: pointer;
 }
 
@@ -2661,16 +2665,19 @@ h3.banner-item__title {
     justify-content: center;
     width: 70px;
     height: 70px;
-    background-color: #F3F3F2;
     cursor: pointer;
+    background-image: url('../image/arrow-right.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-color: #F3F3F2;
+    transition: .3s;
+}
+.pagination__arrow:hover{
+    background-image: url('../image/arrow-slick-white-right.png');
+    background-color: #383838;
 }
 
-.pagination__arrow>img {
-    display: block;
-    max-width: 12px;
-    width: 100%;
-    height: auto;
-}
 
 /* ************NEWS***************** */
 
@@ -3448,6 +3455,10 @@ h3.banner-item__title {
     .banner-item_price .banner-item__text{
         max-width: 55%;
     }
+    .pagination__arrow{
+        width: 60px;
+        height: 60px;
+    }
 }
 
 @media screen and (max-width: 1280.25px) {
@@ -3702,8 +3713,8 @@ h3.banner-item__title {
         min-height: 250px;
     }
     h3.banner-item__title{
-        font-size: 22px;
-        margin-bottom: 15px !important;
+        font-size: 20px;
+        margin-bottom: 27px !important;
     }
     .banner-item__paragraph{
         margin-top: 0px;
@@ -4082,6 +4093,7 @@ h3.banner-item__title {
         max-width: none;
         margin: 0 auto;
         margin-bottom: 20px;
+        padding: 30px 35px;
     }
     .banner-item:last-child{
         margin-bottom: 0px;
@@ -4362,11 +4374,15 @@ h3.banner-item__title {
         max-width: 100%;
     }
     .banner-item__paragraph{
-        font-size: 18px;
-        line-height: 26px;
+        font-size: 13px;
+        line-height: 22px;
     }
     .banner-item_price .banner-item__text{
         max-width: 65%;
+    }
+    .pagination__arrow{
+        width: 55px;
+        height: 55px;
     }
 }
 
@@ -5437,6 +5453,13 @@ h3.banner-item__title {
     }
     .item-price{
         display: none;
+    }
+    .pagination__link{
+        margin-left: 20px;
+    }
+    .pagination__arrow{
+        width: 50px;
+        height: 50px;
     }
 }
 
