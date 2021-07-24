@@ -1452,7 +1452,6 @@ h2 {
     line-height: 49px;
     margin-bottom: 60px;
     text-decoration: none;
-    margin: 0;
 }
 
 h3 {
@@ -1461,14 +1460,12 @@ h3 {
     line-height: 27px;
     margin-bottom: 45px;
     text-decoration: none;
-    margin: 0;
 }
 
 h4 {
     font-size: 16px;
     font-weight: 700;
     line-height: 22px;
-    margin: 0;
 }
 
 p {
