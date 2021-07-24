@@ -650,7 +650,7 @@ a {
 }
 
 .card-about-us__item_full-long .advantages-block__photo {
-    max-width: 405px;
+    max-width: 455px;
     box-sizing: content-box;
 }
 
@@ -1443,6 +1443,7 @@ h1 {
     line-height: 52px;
     letter-spacing: 0em;
     text-decoration: none;
+    margin: 0;
 }
 
 h2 {
@@ -1451,6 +1452,7 @@ h2 {
     line-height: 49px;
     margin-bottom: 60px;
     text-decoration: none;
+    margin: 0;
 }
 
 h3 {
@@ -1459,12 +1461,14 @@ h3 {
     line-height: 27px;
     margin-bottom: 45px;
     text-decoration: none;
+    margin: 0;
 }
 
 h4 {
     font-size: 16px;
     font-weight: 700;
     line-height: 22px;
+    margin: 0;
 }
 
 p {
@@ -3211,6 +3215,13 @@ h3.banner-item__title {
 .mobile-header{
     display: none;
 }
+/* catalog */
+.catalog-wrap > .breadcrumbs{
+    margin-bottom: 60px;
+}
+.advantages-block__link_cem{
+    bottom: 60px;
+}
 
 
 /* **************MEDIA****************** */
@@ -3502,6 +3513,13 @@ h3.banner-item__title {
     }
     .connection__item_row>.banner-contact__type{
         margin: 0px 20px 0px 0px;
+    }
+    /* vatalog page */
+    .catalog__sort, .filter{
+        margin-bottom: 50px;
+    }
+    h1{
+        font-size: 35px;
     }
 }
 

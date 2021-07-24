@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 ]
             }
         ]
-
+        // парсинг массива. чтение категорий
         function parseTitleInHTML(arr) {
             arr.forEach(item => {
                 hambCategory.innerHTML += `<li class="column-footer__item column-footer__item_link hamb-category__item">
@@ -129,11 +129,12 @@ document.addEventListener('DOMContentLoaded', function () {
                                             </li>`
             });
         }
-
+        // парсинг массива. чтение ссылок
         function parseLinksInHTML(arr, key) {
             let arrayWitchLinks = arr.find(item => Object.values(item).includes(key))
             hambLinks.innerHTML = '';
             arrayWitchLinks.subtitle.forEach(item => {
+                // если это просто ссылка
                 if (typeof item !== 'object') {
                     hambLinks.innerHTML += `<li class="column-footer__item column-footer__item_link">
                                             <a href="#" class='hamb-links__item'>
@@ -141,6 +142,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                             </a>
                                         </li>`
                 } else {
+                    // если это надписть (факс и т.д.)
                     hambLinks.innerHTML += `<li class="column-footer__item column-footer__item_link">
                                             <a href="${item[1]}" class='hamb-links__item ${item[2]}'>
                                                ${item[0]}
@@ -180,6 +182,15 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.querySelector('html').style.overflowY = 'scroll';
                 openHambBtn.removeEventListener('click', openId);
                 closeHambBtn.removeEventListener('click', closeId);
+                closeHambBtn.removeEventListener('click', openMobId);
+            });
+            let openMobId = closeHambMobBtn.addEventListener('click', () => {
+                hambModal.classList.add('hide');    
+                hambModal.style.transform = `translateY(-100vh)`;
+                document.querySelector('html').style.overflowY = 'scroll';
+                openHambBtn.removeEventListener('click', openId);
+                closeHambBtn.removeEventListener('click', closeId);
+                closeHambBtn.removeEventListener('click', openMobId);
             });
         })
 
@@ -204,12 +215,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     }
 
-    let openMobId = closeHambMobBtn.addEventListener('click', () => {
-        hambModal.classList.add('hide');
-        hambModal.classList.remove('showFlex');
-        document.querySelector('html').style.overflowY = 'scroll';
-        openHambBtn.removeEventListener('click', openMobId);
-    });
+    
 
     // scroll
     $("a.scroll-to").on("click", function (e) {
