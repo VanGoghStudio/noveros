@@ -3222,7 +3222,12 @@ h3.banner-item__title {
 .advantages-block__link_cem{
     bottom: 60px;
 }
-
+.advantages-block__photo_cert{
+    margin-top: 5%;
+}
+.card-about-us__item_long .advantages-block__text{
+    max-width: 55%;
+}
 
 /* **************MEDIA****************** */
 
@@ -3494,7 +3499,9 @@ h3.banner-item__title {
     .adv-company-wrap .advantages-block__number{
         margin-bottom: 30px;
     }
-    
+    .advantages-block__photo_cert{
+        max-width: 40%;
+    }
 }
 
 @media screen and (max-width: 1280.25px) {
@@ -3520,6 +3527,9 @@ h3.banner-item__title {
     }
     h1{
         font-size: 35px;
+    }
+    .advantages-block__photo_right{
+        right: -3%;
     }
 }
 
