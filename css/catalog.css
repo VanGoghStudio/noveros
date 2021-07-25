@@ -81,10 +81,12 @@
 }
 .product-photo-wrap{
     display: flex;
-    min-height: 220px;
+    height: 220px;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    overflow: hidden;
+    margin-bottom: 25px;
 }
 
 .product:hover{
@@ -94,6 +96,7 @@
 .product__photo{
     display: block;
     width: auto;
+    max-height: 100%;
     max-width: 100%;
     margin: 0 auto;
 }
