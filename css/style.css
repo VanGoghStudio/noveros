@@ -3505,6 +3505,9 @@ h3.banner-item__title {
     .advantages-block__photo_cert{
         max-width: 40%;
     }
+    .figures-wrap .advantages-block__photo_right{
+        right: -3%;
+    }
 }
 
 @media screen and (max-width: 1280.25px) {
@@ -4563,6 +4566,12 @@ h3.banner-item__title {
     .figures-wrap .card-about-us__item_no-overflow{
         min-height: 305px;
     }
+    .figures-wrap .card-about-us__item_long .advantages-block__text{
+        max-width: 45%;
+    }
+    .figures-wrap .advantages-block__photo_right{
+        max-width: 34%;
+    }
 }
 
 
@@ -5052,7 +5061,7 @@ h3.banner-item__title {
     }
 
     .card-about-us__item {
-        min-height: 240px;
+        min-height: 245px;
     }
 
     .company-links__item:nth-child(3) {
@@ -5195,7 +5204,7 @@ h3.banner-item__title {
         padding-bottom: 40px;
     }
     .advantages-block__number{
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
     .advantages-block__photo_middle{
         margin-top: 10px;
@@ -5751,6 +5760,12 @@ h3.banner-item__title {
     .section-text__paragraph{
         font-size: 11px;
         line-height: 19px;
+    }
+    .product{
+        min-height: 330px;
+    }
+    .figures-wrap .advantages-block__photo_right{
+        max-width: 165px;
     }
 }
 
