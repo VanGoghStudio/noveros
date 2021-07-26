@@ -3111,11 +3111,17 @@ h3.banner-item__title {
     font-weight: 400;
     line-height: 24px;
 }
+.search__panel{
+    position: relative;
+}
 
 .search__icon {
-    display: none;
-    width: 100%;
-    max-width: 30px;
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    transform: translateY(-50%);
 }
 .breadcrumbs__item{
     font-size: 13px;
@@ -5744,7 +5750,7 @@ h3.banner-item__title {
     }
     .section-text__paragraph{
         font-size: 11px;
-        line-height: 22px;
+        line-height: 19px;
     }
 }
 
