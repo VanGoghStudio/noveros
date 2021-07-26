@@ -3526,7 +3526,19 @@ h3.banner-item__title {
         font-size: 35px;
     }
     .advantages-block__photo_right{
-        right: -3%;
+        right: -13%;
+    }
+    .figures-wrap .card-about-us__item_long .advantages-block__text{
+        max-width: 63%;
+    }
+    .figures-wrap .card-about-us__item_no-overflow{
+        min-height: 400px;
+    }
+    .advantages-block__photo_cert{
+        margin-top: 7%;
+    }
+    h2{
+        font-size: 35px;
     }
 }
 
@@ -4250,7 +4262,7 @@ h3.banner-item__title {
         margin-bottom: 40px;
     }
     .product-photo-wrap{
-        /* height: 150px; */
+        max-height: 115px;
         margin-bottom: 20px;
     }
     .product__title{
@@ -4298,7 +4310,7 @@ h3.banner-item__title {
         margin-right: 0px;
     }
     .catalog__sort, .filter{
-        margin-bottom: 10px;
+        margin-bottom: 30px;
     }
     .product__buy-button{
         height: 40px;
@@ -4541,6 +4553,9 @@ h3.banner-item__title {
     }
     .figures-wrap .card-about-us{
         padding-bottom: 50px;
+    }
+    .figures-wrap .card-about-us__item_no-overflow{
+        min-height: 305px;
     }
 }
 
@@ -5724,8 +5739,12 @@ h3.banner-item__title {
     .figures-wrap .section-title{
         margin-bottom: 35px;
     }
-    .card-about-us__item_no-overflow{
+    .figures-wrap .card-about-us__item_no-overflow{
         min-height: 100px;
+    }
+    .section-text__paragraph{
+        font-size: 11px;
+        line-height: 22px;
     }
 }
 
